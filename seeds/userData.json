@@ -49,21 +49,21 @@
   },
   {
     "product_name": "A Pair of New Shoes",
-    "description": "WHAT ARE THOSE?! ",
-    "money_change": "",
-    "dopa_change": 
+    "description": "WHAT ARE THOSE?! You scored yourself a sleek pair of new Crocs!",
+    "money_change": 55,
+    "dopa_change": 4
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Book Collection",
+    "description": "You're a wizard, Harry! Pick up the entire Harry Potter Catelog, books one through seven.",
+    "money_change": 180,
+    "dopa_change": 10
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Trading Cards",
+    "description": "It's time to Duel! Pick up a pack of rare Yugioh Cards from a local collector.",
+    "money_change": 12000,
+    "dopa_change":  
   },
   {
     "product_name": "Professional Camera",
