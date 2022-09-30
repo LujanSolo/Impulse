@@ -1,8 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-//* will need PUT, and maybe DEL? (to remove from 'deck' or do we map the array?)
-
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
