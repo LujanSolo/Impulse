@@ -1,28 +1,63 @@
 const router = require('express').Router();
-const { Project, User } = require('../../models');
+const { User } = require('../../models');
 
+//* will need PUT, and maybe DEL? (to remove from 'deck' or do we map the array?)
 
-router.get('/', async (req, res) => {
-  //TODO: Add code to find all the projects and the associated users and render homepage
-});
+router.post('/', async (req, res) => {
+  try {
+    const userData = await User.create(req.body);
 
-router.get('/project/:id', async (req, res) => {
- //TODO: Add code to find one of the projects and the associated user and render project
-});
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
 
-// Use withAuth middleware to prevent access to route
-router.get('/profile', async (req, res) => {
-  //TODO: Add code to find the loggedIn user and their associated projects and render profile
-});
-
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
+      res.status(200).json(userData);
+    });
+  } catch (err) {
+    res.status(400).json(err);
   }
+});
 
-  res.render('login');
+router.post('/login', async (req, res) => {
+  try {
+    const userData = await User.findOne({ where: { email: req.body.email } });
+
+    if (!userData) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect email or password, please try again' });
+      return;
+    }
+
+    const validPassword = await userData.checkPassword(req.body.password);
+
+    if (!validPassword) {
+      res
+        .status(400)
+        .json({ message: 'Incorrect email or password, please try again' });
+      return;
+    }
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      
+      res.json({ user: userData, message: 'You are now logged in!' });
+    });
+
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+router.post('/logout', (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
 });
 
 module.exports = router;
