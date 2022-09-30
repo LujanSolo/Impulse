@@ -19,13 +19,13 @@
   },
   {
     "product_name": "Life Sized Pikachu Plush Toy",
-    "description": "Feeling lonely? Not anymore! This 2 foot tall pikachua plush is sure to fill that void.",
+    "description": "Feeling lonely? Not anymore! This 2 foot tall Pikachu plush is sure to fill that void.",
     "money_change": 40,
     "dopa_change": 3
   },
   {
     "product_name": "Bouquet of Flowers",
-    "description": "Brighten someones day with a beautiuful bouquet of sunflowers",
+    "description": "Brighten someones day with a beautiful bouquet of sunflowers",
     "money_change": 70,
     "dopa_change": 5
   },
@@ -63,7 +63,55 @@
     "product_name": "Trading Cards",
     "description": "It's time to Duel! Pick up a pack of rare Yugioh Cards from a local collector.",
     "money_change": 12000,
-    "dopa_change":  
+    "dopa_change":  130
+  },
+  {
+    "product_name": "Brand New Outfit",
+    "description": "Make over time! That new look is really workin for you!",
+    "money_change": 400,
+    "dopa_change": 21
+  },
+  {
+    "product_name": "New Laptop",
+    "description": "Did your old one even break? Who cares! Its a new MacBook Pro!",
+    "money_change": 3000,
+    "dopa_change": 33
+  },
+  {
+    "product_name": "Two Tickets to an Amusement Park",
+    "description": "Disneyland, huh? Did you know doritos were invented at Disneyland?! ",
+    "money_change": ,
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
   },
   {
     "product_name": "Professional Camera",
