@@ -63,7 +63,7 @@
     "product_name": "Trading Cards",
     "description": "It's time to Duel! Pick up a pack of rare Yugioh Cards from a local collector.",
     "money_change": 12000,
-    "dopa_change":  130
+    "dopa_change":  180
   },
   {
     "product_name": "Brand New Outfit",
@@ -80,49 +80,49 @@
   {
     "product_name": "Two Tickets to an Amusement Park",
     "description": "Disneyland, huh? Did you know doritos were invented at Disneyland?! ",
-    "money_change": ,
-    "dopa_change": 
+    "money_change": 450,
+    "dopa_change": 23
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Week Long Hotel Stay",
+    "description": "Wanna get away? Of course you do. We are all constantly trying to escape the repetition of our daily lives.",
+    "money_change": 2000,
+    "dopa_change": 95
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "New Guitar",
+    "description": "Who are you trying to impress with this? Just don't be THAT guy at your next party.",
+    "money_change": 1200,
+    "dopa_change": 70
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Nice Dinner",
+    "description": "Treat yo' self! Steak and lobster?! Ok I see you!",
+    "money_change": 220,
+    "dopa_change": 15
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Haircut",
+    "description": "Middle Part? Bangs? Highlights and trim? The possibilities are endless!",
+    "money_change": 80,
+    "dopa_change": 6
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "New Car",
+    "description": "Doing your part with an electric vehicle I see! And you went with the Chevy Volt! Interesting choice...",
+    "money_change": 18000,
+    "dopa_change": 220
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Groceries",
+    "description": "Way to save money AND create memories by cooking from home. Remy from Ratatouille would be proud.",
+    "money_change": 120,
+    "dopa_change": 85
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Surfboard",
+    "description": "Can you actually surf or is this more of a 'if i buy it I will do it' kind of situation?",
+    "money_change": 1000,
+    "dopa_change": 50
   },
 ]
