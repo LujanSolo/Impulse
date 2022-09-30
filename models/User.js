@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -35,6 +35,27 @@ User.init(
         len: [8],
       },
     },
+    money: {
+      type: DataTypes.INTEGER,
+      // we are adding the default with character choice
+    }, 
+    dopa_level: {
+      type: DataTypes.INTEGER,
+      // we are adding the default with character choice
+    }, 
+    whatWeOwn: {
+      type: DataTypes.TEXT,
+      // this one is still up in the air 
+    }, 
+    winTotal: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0; 
+    }, 
+    loseTotal: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0; 
+    }
+
   },
   {
     hooks: {

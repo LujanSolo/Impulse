@@ -39,6 +39,8 @@ function startTurn() {
 
             // remove class in that div 
             $(tileArray[startPosition-1]).removeClass("fa-solid fa-dragon");
+                // transitions opacity -- 0 - 100% in a second or so 
+
 
             // get new position on board 
             currentPosition = parseInt(startPosition) + parseInt(dieRole);
@@ -48,6 +50,7 @@ function startTurn() {
 
     // update position 
     $(tileArray[currentPosition-1]).addClass("fa-solid fa-dragon");
+    // transitions opacity -- 0 - 100% in a second or so 
 }
 
 rollbtnEl.on("click", startTurn)
