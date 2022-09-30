@@ -102,27 +102,27 @@
     "dopa_change": 15
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Haircut",
+    "description": "Middle Part? Bangs? Highlights and trim? The possibilities are endless!",
+    "money_change": 80,
+    "dopa_change": 6
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "New Car",
+    "description": "Doing your part with an electric vehicle I see! And you went with the Chevy Volt! Interesting choice...",
+    "money_change": 18000,
+    "dopa_change": 220
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Groceries",
+    "description": "Way to save money AND create memories by cooking from home. Remy from Ratatouille would be proud.",
+    "money_change": 120,
+    "dopa_change": 85
   },
   {
-    "product_name": "Professional Camera",
-    "description": "",
-    "money_change": "",
-    "dopa_change": 
+    "product_name": "Surfboard",
+    "description": "Can you actually surf or is this more of a 'if i buy it I will do it' kind of situation?",
+    "money_change": 1000,
+    "dopa_change": 50
   },
 ]
