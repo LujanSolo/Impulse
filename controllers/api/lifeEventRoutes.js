@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Project } = require('../../models');
 
 
-//* will need GET, PUT, and DEL(?)
+//* will need PUT, and DEL(?)
 router.post('/', async (req, res) => {
   try {
     const newProject = await Project.create({
