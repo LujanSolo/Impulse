@@ -1,17 +1,80 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "product_name": "Professional Camera",
+    "description": "You finally decide to up your photography game with a new Nikon Z9 Mirrorless Camera!",
+    "money_change": 5296,
+    "dopa_change": 65
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "product_name": "Game Console",
+    "description": "People can't entertain you like video games can, congrats on your new Nintendo Switch!",
+    "money_change": 350,
+    "dopa_change": 15
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
-  }
+    "product_name": "Concert Tickets",
+    "description": "Get your picnic basket ready and dust off those dancing shoes, you've scored two tickets to the Hollywood Bowl!",
+    "money_change": 1000,
+    "dopa_change": 25
+  },
+  {
+    "product_name": "Life Sized Pikachu Plush Toy",
+    "description": "Feeling lonely? Not anymore! This 2 foot tall pikachua plush is sure to fill that void.",
+    "money_change": 40,
+    "dopa_change": 3
+  },
+  {
+    "product_name": "Bouquet of Flowers",
+    "description": "Brighten someones day with a beautiuful bouquet of sunflowers",
+    "money_change": 70,
+    "dopa_change": 5
+  },
+  {
+    "product_name": "New Painting",
+    "description": "Great taste, I must say. This piece by Michel Smith Boyd titled 'Morph' is sure to impress.",
+    "money_change": 674,
+    "dopa_change": 17
+  },
+  {
+    "product_name": "Fancy Computer Keyboard",
+    "description": "Your opponents dont stand a chance.. Level up your set up with this Logitech G915 LIGHTSPEED Keyboard",
+    "money_change": 240,
+    "dopa_change": 11
+  },
+  {
+    "product_name": "Espresso Machine",
+    "description": "Coffee enthusiast, aye? Level up your latte art with this brand new Breville Barista Touch",
+    "money_change": 1100,
+    "dopa_change": 28
+  },
+  {
+    "product_name": "A Pair of New Shoes",
+    "description": "WHAT ARE THOSE?! ",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
+  {
+    "product_name": "Professional Camera",
+    "description": "",
+    "money_change": "",
+    "dopa_change": 
+  },
 ]
