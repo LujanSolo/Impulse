@@ -49,11 +49,11 @@ User.init(
     }, 
     winTotal: {
       type: DataTypes.INTEGER,
-      defaultValue: 0; 
+      defaultValue: 0
     }, 
     loseTotal: {
       type: DataTypes.INTEGER,
-      defaultValue: 0; 
+      defaultValue: 0
     }
 
   },
