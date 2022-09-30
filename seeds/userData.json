@@ -91,7 +91,7 @@
   },
   {
     "product_name": "New Guitar",
-    "description": "Who are you trying to impress with this? Just don't be THAT guy at your next party.",
+    "description": "Who are you trying to impress with this new Fender Stratocaster? Ok fine it is pretty cool, just don't be THAT guy at your next party.",
     "money_change": 1200,
     "dopa_change": 70
   },
@@ -121,7 +121,7 @@
   },
   {
     "product_name": "Surfboard",
-    "description": "Can you actually surf or is this more of a 'if i buy it I will do it' kind of situation?",
+    "description": "Can you actually surf or is this more of a 'if i buy it I will hopefully do it' kind of situation?",
     "money_change": 1000,
     "dopa_change": 50
   },
