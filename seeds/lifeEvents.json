@@ -2,7 +2,7 @@
   {
     "event_name": "Pay Phone Bill",
     "description": "",
-    "money_change": -150, 
+    "money_change": -150,
     "dopa_change": -50
   },
   {
@@ -57,7 +57,7 @@
     "event_name": "Car Needs Repairs",
     "description": "",
     "money_change": -5000,
-    "dopa_change": -500 
+    "dopa_change": -500
   },
   {
     "event_name": "Philanthropy! Donate to the LGBT Youth Center!",
@@ -119,5 +119,4 @@
     "money_change": 250,
     "dopa_change": -500
   }
-
 ]
