@@ -11,20 +11,19 @@ LifeEvents.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    event_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
       type: DataTypes.STRING,
     },
-    date_created: {
-      type: DataTypes.DATE,
+    money_change : {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
+    dopa_change: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {

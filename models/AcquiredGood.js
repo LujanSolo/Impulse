@@ -19,11 +19,11 @@ AcquiredGoods.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    cost : {
+    money_change : {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    dopa_cost: {
+    dopa_change: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },

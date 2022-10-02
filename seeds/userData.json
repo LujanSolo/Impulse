@@ -63,7 +63,7 @@
     "product_name": "Trading Cards",
     "description": "It's time to Duel! Pick up a pack of rare Yugioh Cards from a local collector.",
     "money_change": 12000,
-    "dopa_change":  180
+    "dopa_change": 180
   },
   {
     "product_name": "Brand New Outfit",
@@ -124,5 +124,5 @@
     "description": "Can you actually surf or is this more of a 'if i buy it I will hopefully do it' kind of situation?",
     "money_change": 1000,
     "dopa_change": 50
-  },
+  }
 ]
