@@ -1,28 +1,38 @@
 const router = require('express').Router();
-const { Project, User } = require('../../models');
+const { AcquiredGoods } = require('../../models');
 
 
-router.get('/', async (req, res) => {
-  //TODO: Add code to find all the projects and the associated users and render homepage
-});
+router.post('/', async (req, res) => {
+  try {
+    const newProject = await Project.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
 
-router.get('/project/:id', async (req, res) => {
- //TODO: Add code to find one of the projects and the associated user and render project
-});
-
-// Use withAuth middleware to prevent access to route
-router.get('/profile', async (req, res) => {
-  //TODO: Add code to find the loggedIn user and their associated projects and render profile
-});
-
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
+    res.status(200).json(newProject);
+  } catch (err) {
+    res.status(400).json(err);
   }
+});
 
-  res.render('login');
+router.delete('/:id', async (req, res) => {
+  try {
+    const goodsData = await Project.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!goodsData) {
+      res.status(404).json({ message: 'No project found with this id!' });
+      return;
+    }
+
+    res.status(200).json(goodsData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

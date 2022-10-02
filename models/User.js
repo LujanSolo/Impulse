@@ -20,6 +20,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    //*  we can likely lose email and just go username/password for login
     email: {
       type: DataTypes.STRING,
       allowNull: false,
