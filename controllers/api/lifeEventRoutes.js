@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { LifeEvents } = require('../../models');
 
-//* what are we going to actually be doing to this "chance card"? just reading and deleting?
+//* if we post and delete to this route, it will be so that the player can add their own life event or goods (with delete button)
 router.post('/', async (req, res) => {
   try {
     const newProject = await LifeEvent.create({
