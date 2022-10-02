@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { LifeEvents } = require('../../models');
 
-
+//* what are we going to actually be doing to this "chance card"? just reading and deleting?
 router.post('/', async (req, res) => {
   try {
-    const newProject = await Project.create({
+    const newProject = await LifeEvent.create({
       ...req.body,
       user_id: req.session.user_id,
     });

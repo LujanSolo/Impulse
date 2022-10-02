@@ -40,8 +40,8 @@ AcquiredGoods.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'acquired_good',
   }
 );
 
-module.exports = Project;
+module.exports = AcquiredGoods;

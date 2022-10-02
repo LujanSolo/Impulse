@@ -1,9 +1,8 @@
 const User = require('./User');
 
-//* I changed it to ('./AcquiredGood') here to keep with model naming conventions (singular). Same thing with ('./LifeEvent) below - JL
+//* I changed filename to ('./AcquiredGood') here to keep with model naming conventions (singular) on model names. Same thing with ('./LifeEvent) below - JL
 const AcquiredGoods = require('./AcquiredGood');
-// const LifeEvents = require('./LifeEvent');
-
+const LifeEvents = require('./LifeEvent');
 
 User.hasMany(AcquiredGoods, {
   foreignKey: 'user_id',
