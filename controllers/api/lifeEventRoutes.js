@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const { LifeEvents } = require('../../models');
 
+
+//* LIKELY JUST A GET(READ) ROUTE
+
 //* if we post and delete to this route, it will be so that the player can add their own life event or goods (with delete button)
 router.post('/', async (req, res) => {
   try {
