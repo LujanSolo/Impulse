@@ -6,7 +6,7 @@ const lifeEventsData = require('./lifeEvents.json');
 
 
 const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: false }); //? was this true or false to begin with?
 
   const acquiredGoods = await AcquiredGoods.bulkCreate(acquiredGoodsData, {
     individualHooks: true,
