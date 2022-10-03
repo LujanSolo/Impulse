@@ -3,138 +3,161 @@
     "product_name": "Professional Camera",
     "description": "You finally decide to up your photography game with a new Nikon Z9 Mirrorless Camera!",
     "money_change": -5296,
-    "dopa_change": 10500
+    "dopa_change": 10500,
+    "url": ""
   },
   {
     "product_name": "Game Console",
     "description": "People can't entertain you like video games can, congrats on your new Nintendo Switch!",
     "money_change": -350,
-    "dopa_change": 700
+    "dopa_change": 700,
+    "url": ""
   },
   {
     "product_name": "Concert Tickets",
     "description": "Get your picnic basket ready and dust off those dancing shoes, you've scored two tickets to the Hollywood Bowl!",
     "money_change": -1000,
-    "dopa_change": 2000
+    "dopa_change": 2000,
+    "url": ""
   },
   {
     "product_name": "Life Sized Pikachu Plush Toy",
     "description": "Feeling lonely? Not anymore! This 2 foot tall Pikachu plush is sure to fill that void.",
     "money_change": -40,
-    "dopa_change": 80
+    "dopa_change": 80,
+    "url": ""
   },
   {
     "product_name": "Bouquet of Flowers",
     "description": "Brighten someones day with a beautiful bouquet of sunflowers",
     "money_change": -70,
-    "dopa_change": 140
+    "dopa_change": 140,
+    "url": ""
   },
   {
     "product_name": "New Painting",
     "description": "Great taste, I must say. This piece by Michel Smith Boyd titled 'Morph' is sure to impress.",
     "money_change": -674,
-    "dopa_change": 1340
+    "dopa_change": 1340,
+    "url": ""
   },
   {
     "product_name": "Fancy Computer Keyboard",
     "description": "Your opponents dont stand a chance.. Level up your set up with this Logitech G915 LIGHTSPEED Keyboard",
     "money_change": -240,
-    "dopa_change": 480
+    "dopa_change": 480,
+    "url": ""
   },
   {
     "product_name": "Espresso Machine",
     "description": "Coffee enthusiast, aye? Level up your latte art with this brand new Breville Barista Touch",
     "money_change": -1100,
-    "dopa_change": 2200
+    "dopa_change": 2200,
+    "url": ""
   },
   {
     "product_name": "A Pair of New Shoes",
     "description": "WHAT ARE THOSE?! You scored yourself a sleek pair of new Crocs!",
     "money_change": -55,
-    "dopa_change": 110
+    "dopa_change": 110,
+    "url": ""
   },
   {
     "product_name": "Book Collection",
     "description": "You're a wizard, Harry! Pick up the entire Harry Potter Catelog, books one through seven.",
     "money_change": -180,
-    "dopa_change": 360
+    "dopa_change": 360,
+    "url": ""
   },
   {
     "product_name": "Trading Cards",
     "description": "It's time to Duel! Pick up a pack of extremely rare Yugioh Cards from a local collector.",
     "money_change": -12000,
-    "dopa_change": 24000
+    "dopa_change": 24000,
+    "url": ""
   },
   {
     "product_name": "Brand New Outfit",
     "description": "Make over time! That new look is really workin for you!",
     "money_change": -400,
-    "dopa_change": 800
+    "dopa_change": 800,
+    "url": ""
   },
   {
     "product_name": "New Laptop",
     "description": "Did your old one even break? Who cares! Its a new MacBook Pro!",
     "money_change": -3000,
-    "dopa_change": 6000
+    "dopa_change": 6000,
+    "url": ""
   },
   {
     "product_name": "Two Tickets to an Amusement Park",
     "description": "Disneyland, huh? Did you know doritos were invented at Disneyland?! ",
     "money_change": -450,
-    "dopa_change": 900
+    "dopa_change": 900,
+    "url": ""
   },
   {
     "product_name": "Week Long Hotel Stay",
     "description": "Wanna get away? Of course you do. We are all constantly trying to escape the repetition of our daily lives.",
     "money_change": -2000,
-    "dopa_change": 4000
+    "dopa_change": 4000,
+    "url": ""
   },
   {
     "product_name": "New Guitar",
     "description": "Who are you trying to impress with this new Fender Stratocaster? Ok fine it is pretty cool, just don't be THAT guy at your next party.",
     "money_change": -1200,
-    "dopa_change": 2400
+    "dopa_change": 2400,
+    "url": ""
   },
   {
     "product_name": "Nice Dinner",
     "description": "Treat yo' self! Steak and lobster?! Ok I see you!",
     "money_change": -220,
-    "dopa_change": 440
+    "dopa_change": 440,
+    "url": ""
   },
   {
     "product_name": "Haircut",
     "description": "Middle Part? Bangs? Highlights and trim? The possibilities are endless!",
     "money_change": -80,
-    "dopa_change": 160
+    "dopa_change": 160,
+    "url": ""
   },
   {
     "product_name": "New Car",
     "description": "Doing your part with an electric vehicle I see! And you went with the Chevy Volt! Interesting choice...",
     "money_change": -18000,
-    "dopa_change": 36000
+    "dopa_change": 36000,
+    "url": ""
   },
   {
     "product_name": "Groceries",
     "description": "Way to save money AND create memories by cooking from home. Remy from Ratatouille would be proud.",
     "money_change": -120,
-    "dopa_change": 240
+    "dopa_change": 240,
+    "url": ""
   },
   {
     "product_name": "Surfboard",
     "description": "Can you actually surf or is this more of a 'if I buy it hopefully I will do it' kind of situation?",
     "money_change": -1000,
-    "dopa_change": 2000
+    "dopa_change": 2000,
+    "url": ""
   },
   {
     "product_name": "Monstera Plant",
     "description": "The more plants inside the home the better, right? ",
     "money_change": -50,
-    "dopa_change": 100
+    "dopa_change": 100,
+    "url": ""
   },
   {
     "product_name": "Manicure/Pedicure",
     "description": "You deserve to be pampered!",
     "money_change": -100,
-    "dopa_change": 200
+    "dopa_change": 200,
+    "url": ""
   }
 ]
