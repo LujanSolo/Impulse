@@ -31,6 +31,18 @@ console.log(tileArray);
 $(tileArray[0]).addClass("fa-solid fa-dragon");
 
 // ************************ Functions ************************//
+
+// todo function to start game
+function startGame() {
+  // call function to get goods array and life events array
+  // get response from user, add the character selected traits to local storage and to variable 
+
+  // hide startGame menu
+  // show character turn el 
+  // characterTurnCardEl.show();
+
+}
+
 function startTurn() {
   // variable with rollDie number
   const dieRole = rollDie();
