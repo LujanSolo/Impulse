@@ -57,19 +57,19 @@
     "event_name": "Car Needs Repairs",
     "description": "",
     "money_change": -5000,
-    "dopa_change": -1500
+    "dopa_change": -2500
   },
   {
     "event_name": "Philanthropy! Donate to your local LGBT Youth Center!",
     "description": "",
     "money_change": -1250,
-    "dopa_change": 5000
+    "dopa_change": 2500
   },
   {
     "event_name": "Great Date! Big dinner bill!",
     "description": "",
     "money_change": -350,
-    "dopa_change": 700
+    "dopa_change": 350
   },
   {
     "event_name": "Happy Birthday! You got money!",
@@ -93,7 +93,7 @@
     "event_name": "The Cupboards are Bare. Time to go Grocery Shopping.",
     "description": "",
     "money_change": -400,
-    "dopa_change": -400
+    "dopa_change": -200
   },
   {
     "event_name": "You Found Money on the Street! Sweet!",
@@ -118,5 +118,35 @@
     "description": "",
     "money_change": 250,
     "dopa_change": -500
+  },
+  {
+    "event_name": "Get sick the day before your non-refundable vacation and can't go",
+    "description": "",
+    "money_change": -3000,
+    "dopa_change": -1500
+  },
+  {
+    "event_name": "You finally got the courage to ask your crush on a date.. They say no!",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -500
+  },
+  {
+    "event_name": "You tell your coworkers a joke and no one laughs. Yikes!",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -1000
+  },
+  {
+    "event_name": "Oof! Your car was broken into last night.",
+    "description": "",
+    "money_change": -500,
+    "dopa_change": -500
+  },
+  {
+    "event_name": "Oh no! Your boss chewed you out in front of your team.. How embarrassing.",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -250
   }
 ]
