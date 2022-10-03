@@ -18,6 +18,7 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
-// //* if we post and delete to this route, it will be so that the player can add their own life event or goods (with delete button)
+
+//* if we post and delete to this route, it will be so that the player can add their own life event or goods (with delete button)
 
 module.exports = router;
