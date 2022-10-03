@@ -1,13 +1,18 @@
 // ************************ Reference variables ************************//
 const container = $("#container");
-// const titleEl = $("#title");
+const characterTurnCardEl = $(".character-turn-card");
+const lifeEventsCardEl = $(".life-events-card");
+const acquiredGoodCardEl = $(".acquired-good-card");
+const pickedLifeEventCardEl = $(".picked-life-events-card");
+const pickedGoodsCardEl = $(".picked-acquired-good-card");
+
 const rollbtnEl = $("#roll-btn");
 const rollResultEl = $("#die-result");
-// const winningCardEl = $(".winning-card");
-// const resetbtnEl = $(".restart-btn");
-// const clearScorebtnEl = $(".clear-btn");
-// const cardHeaderEl = $(".card-heading");
-// const cardScoreEl = $("#p-custom");
+
+const lifeEventsCardbtn = $(".life-event-btn");
+const acquiredGoodCardbtn = $(".acquired-good-btn");
+const pickedLifeEventCardbtn = $(".picked-life-btn");
+const pickedGoodsCardbtn = $(".picked-good-btn");
 
 // ************************ Global variables ************************//
 // this creates an array of all the tile divs

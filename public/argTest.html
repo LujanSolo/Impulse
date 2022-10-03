@@ -12,7 +12,7 @@
       src="https://kit.fontawesome.com/2af300434d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Test Game</title>
   </head>
   <body>
@@ -102,23 +102,24 @@
           </div>
         </article>
 
-
         <!-- **this is the screen that will have all the character stats info and roll dice button ** -->
-        <article class="card w-75 mx-auto mb-3 text-center acquired-good-card">
-            <div class="card-body" id="0">
-              <h5 class="card-title card-heading">The Dopa Dope</h5>
-              <h6 class="mt-0">Character's Name :</h6>
-              <p class="card-text" id="p-custom"> Character Stats</p>
-              
-              <section class="d-flex justify-content-center text-center mt-3">
-                <a href="#" id="roll-btn" class="btn btn-primary mr-4">Roll Dice</a>
-                <p class="mb-0 pt-1">
-                  <i class="fa-solid fa-dice"></i>
-                  <span id="die-result"></span>
-                </p>
-              </section>
-            </div>
-          </article>
+        <article class="card w-75 mx-auto mb-3 text-center character-turn-card">
+          <div class="card-body" id="0">
+            <h5 class="card-title card-heading">The Dopa Dope</h5>
+            <h6 class="mt-0">Character's Name :</h6>
+            <p class="card-text" id="p-custom">Character Stats</p>
+
+            <section class="d-flex justify-content-center text-center mt-3">
+              <a href="#" id="roll-btn" class="btn btn-primary mr-4"
+                >Roll Dice</a
+              >
+              <p class="mb-0 pt-1">
+                <i class="fa-solid fa-dice"></i>
+                <span id="die-result"></span>
+              </p>
+            </section>
+          </div>
+        </article>
 
         <!-- ************** Sample Life Events Card Display ************** -->
         <article class="card w-75 mx-auto mb-3 text-center life-events-card">
@@ -138,31 +139,35 @@
             <h5 class="card-title card-heading">Acquired Goods</h5>
             <h6 class="mt-0">Place Holder :</h6>
             <p class="card-text" id="p-custom">Place Holder</p>
-            <a href="#" class="btn btn-primary life-event-btn"
+            <a href="#" class="btn btn-primary acquired-good-btn"
               >Choose Acquired Goods</a
             >
           </div>
         </article>
 
         <!-- ************** Sample Picked Life Events Card Display ************** -->
-        <article class="card w-75 mx-auto mb-3 text-center life-events-card">
+        <article
+          class="card w-75 mx-auto mb-3 text-center picked-life-events-card"
+        >
           <div class="card-body" id="0">
             <h5 class="card-title card-heading">you choose lifeEventsCard</h5>
             <h6 class="mt-0">Place Holder :</h6>
             <p class="card-text" id="p-custom">Place Holder</p>
-            <a href="#" class="btn btn-primary life-event-btn">Continue</a>
+            <a href="#" class="btn btn-primary picked-life-btn">Continue</a>
           </div>
         </article>
 
         <!-- ************** Sample Picked Acquired Goods Card Display ************** -->
-        <article class="card w-75 mx-auto mb-3 text-center life-events-card">
+        <article
+          class="card w-75 mx-auto mb-3 text-center picked-acquired-good-card"
+        >
           <div class="card-body" id="0">
             <h5 class="card-title card-heading">
               you choose acquiredGoodsCard
             </h5>
             <h6 class="mt-0">Place Holder :</h6>
             <p class="card-text" id="p-custom">Place Holder</p>
-            <a href="#" class="btn btn-primary life-event-btn">Continue</a>
+            <a href="#" class="btn btn-primary picked-good-btn">Continue</a>
           </div>
         </article>
       </section>
