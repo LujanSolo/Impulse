@@ -1,8 +1,8 @@
-# IMPULSE! - The Game
+# <b><i><span style="color:orangered">IMPULSE! - The Game</span></b></i>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Link to Game (hosted by Heroku)
+## Link to Game (hosted on Heroku)
 
 [IMPULSE! - <i>the game where you just can't stop...</i>](http://placeholder)
 
@@ -13,8 +13,6 @@
 - [Screenshots](#screenshots)
 - [Contributors](#contributors)
 - [License](#license)
-- [Questions](#questions)
-
 
 ## Description
 
@@ -25,11 +23,21 @@
 
 ## How To Play
 
-  Goal of the Game: Get to the FINISH LINE with at least
-  Sign Up and Log In to keep track of your scores and all of the merchandise you've acquired. From the main game page, choose one of three Character Classes from one of the three options to start the game. <br />
-  Note: Each class has 2 attributes, <b>MONEY</b> and <b>MOOD</b> levels<br /> which will change as the game progresses.
+  <u>Goal of the Game:</u> Get to the FINISH LINE with at least xMoneyLevel and xMoodLevel (or maybe the icon has to be green level)? <br />
+  1. Log In to keep track of your scores and all of the merchandise you've acquired. 
+  2. From the homepage, choose one of three CHARACTER CLASSES to start the game. <br />
+  <i>Note: Each class has 2 attributes, <b>MONEY</b> and <b>MOOD</b> levels which will change as the game progresses.</i>
+  3. Click on the `Roll Dice` button to advance your Character Icon from 1-4 spaces.
+  4. When your character lands on a square, you will be presented with two options: `Buy Item` and `Choose Life Event`. On the Item Card, you can see what changes will occur to your MONEY and MOOD levels if you were to purchase the item. On the Life Event Card, the MONEY and MOOD properties will be hidden until you select that option. <br />
+  <i>Note: If you do not purchase the item, the game will automatically select the Life Event Card for you.</i>
+  5. Once you've chosen between the two options, a pop-up card will update you on your acquired good or life event. Click `Continue` to, dare we say, continue.
+  6. Click on `Roll Dice` to advance your character again and repeat the process until your character icon reaches the final square of the game board.
+  7. Your final game stats will be displayed with the option to play again.
+  8. Click `Play Again` ... you can't fight the <b><i><span style="color:orangered">IMPULSE!</b></i></span>
 
 ## Motivation
+
+  The challenge for the team was to build their first full-stack app from scratch, implementing Node.js and several packages including, but not limited to, Express.js, Sequelize, and Handlebars - all centered around a MVC-structure in support of an interactive and responsive game. 
 
 
 
@@ -46,31 +54,6 @@
   </tr>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## License
 
-
 This project is covered under the [MIT License](https://opensource.org/licenses/MIT).
-
-
-## Questions
-
-GitHub profile: http://github.com/LujanSolo
-
-Contact me at lujansolo@proton.me for additional inquiries.
