@@ -15,6 +15,7 @@ const lifeEventsCardbtn = $(".life-event-btn");
 const acquiredGoodCardbtn = $(".acquired-good-btn");
 const pickedLifeEventCardbtn = $(".picked-life-btn");
 const pickedGoodsCardbtn = $(".picked-good-btn");
+const playAgainbtn = $(".play-again-btn");
 
 // ************************ Global variables ************************//
 // this creates an array of all the tile divs
@@ -51,6 +52,9 @@ function startTurn() {
       // get new position on board
       currentPosition = parseInt(startPosition) + parseInt(dieRole);
       console.log(currentPosition);
+      if (currentPosition >= tileArray.length) {
+        currentPosition = tileArray.length;
+      }
     }
   }
 
@@ -127,7 +131,13 @@ function endGame() {
   // check win or lose
   // print game over and stats
   gameOverCardEl.show();
-  // play again button
+  // set values from local storage to user Database 
+}
+
+// todo function for play again
+function playAgain() {
+  // clear local storage
+  // refresh play game page 
 }
 
 // todo function to get random life events and gooods and put them in an array at beginning of game
@@ -163,5 +173,6 @@ pickedGoodsCardbtn.on("click", function () {
   pickedGoodsCardEl.hide();
   checkGameOver();
 });
+playAgainbtn.on("click", playAgain);
 
 // getLifeandGoodsArrays();
