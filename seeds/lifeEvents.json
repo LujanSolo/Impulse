@@ -3,25 +3,25 @@
     "event_name": "Pay Phone Bill",
     "description": "",
     "money_change": -150,
-    "dopa_change": -50
+    "dopa_change": -75
   },
   {
     "event_name": "Parking Ticket",
     "description": "",
-    "money_change": -250,
-    "dopa_change": -100
+    "money_change": -300,
+    "dopa_change": -150
   },
   {
     "event_name": "Buy a New iPhone",
     "description": "",
     "money_change": -1000,
-    "dopa_change": 1500
+    "dopa_change": 2000
   },
   {
     "event_name": "Adopt a Pet",
     "description": "",
     "money_change": -300,
-    "dopa_change": 2000
+    "dopa_change": 1200
   },
   {
     "event_name": "Take a Vacation",
@@ -45,7 +45,7 @@
     "event_name": "Buy Anime Body Pillows",
     "description": "",
     "money_change": -50,
-    "dopa_change": 125
+    "dopa_change": 100
   },
   {
     "event_name": "Coworker Laughs at Your Excellent Joke",
@@ -57,10 +57,10 @@
     "event_name": "Car Needs Repairs",
     "description": "",
     "money_change": -5000,
-    "dopa_change": -500
+    "dopa_change": -1500
   },
   {
-    "event_name": "Philanthropy! Donate to the LGBT Youth Center!",
+    "event_name": "Philanthropy! Donate to your local LGBT Youth Center!",
     "description": "",
     "money_change": -1250,
     "dopa_change": 5000
@@ -69,25 +69,25 @@
     "event_name": "Great Date! Big dinner bill!",
     "description": "",
     "money_change": -350,
-    "dopa_change": 500
+    "dopa_change": 700
   },
   {
     "event_name": "Happy Birthday! You got money!",
     "description": "",
     "money_change": 250,
-    "dopa_change": 675
+    "dopa_change": 500
   },
   {
     "event_name": "Tax Returns are Here! Cash Money in Your Pocket!",
     "description": "",
     "money_change": 1750,
-    "dopa_change": 2000
+    "dopa_change": 2500
   },
   {
     "event_name": "Your Student Loans are Past Due! It's Time to Pay Some Back.",
     "description": "",
     "money_change": -500,
-    "dopa_change": -50
+    "dopa_change": -250
   },
   {
     "event_name": "The Cupboards are Bare. Time to go Grocery Shopping.",
@@ -99,13 +99,13 @@
     "event_name": "You Found Money on the Street! Sweet!",
     "description": "",
     "money_change": 100,
-    "dopa_change": 300
+    "dopa_change": 500
   },
   {
     "event_name": "It's Your Friend's Birthday! Buy Them a Gift!",
     "description": "",
     "money_change": -500,
-    "dopa_change": 5000
+    "dopa_change": 1000
   },
   {
     "event_name": "Ewww! Rats in the Apartment! Call the Exterminator!",

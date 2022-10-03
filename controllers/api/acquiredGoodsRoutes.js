@@ -6,6 +6,13 @@ const { AcquiredGoods } = require('../../models');
 //* player lands on square, triggers two fetch requests to say
 //*    go GET a random item from the AcquiredGoods json AND
 //*    go GET a random item from the LifeEvents json
+
+router.get ('/', async (req, res) => {
+  try{
+    const lifeEvents = await 
+  }
+}
+
 router.post('/', async (req, res) => {
   try {
     const newProject = await Project.create({
