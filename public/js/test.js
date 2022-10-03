@@ -1,10 +1,12 @@
 // ************************ Reference variables ************************//
 const container = $("#container");
 const characterTurnCardEl = $(".character-turn-card");
+
 const lifeEventsCardEl = $(".life-events-card");
 const acquiredGoodCardEl = $(".acquired-good-card");
 const pickedLifeEventCardEl = $(".picked-life-events-card");
 const pickedGoodsCardEl = $(".picked-acquired-good-card");
+const gameOverCardEl = $(".game-over-card");
 
 const rollbtnEl = $("#roll-btn");
 const rollResultEl = $("#die-result");
@@ -57,6 +59,9 @@ function startTurn() {
   // transitions opacity -- 0 - 100% in a second or so
 
   // todo call show card functions
+  showAcquirableGoodsCard();
+  showLifeEvents();
+  characterTurnCardEl.hide();
 }
 
 // at start turn, show both cards (each has a button to choose it)
@@ -66,24 +71,62 @@ function startTurn() {
 
 // todo function to show acquirable goods card
 function showAcquirableGoodsCard() {
-  //
+  // set this card to display block
+  acquiredGoodCardEl.show();
+
+  // todo edit the info on this card
 }
 
 // todo function to show life events card
 function showLifeEvents() {
-  //
+  //set this card to display block
+  lifeEventsCardEl.show();
+
+  // todo edit the info on this card
+}
+
+// todo function to show acquirable goods card
+function showPickedAcquirableGoodsCard() {
+  // set lifeevents and goods cards to display none
+  acquiredGoodCardEl.hide();
+  lifeEventsCardEl.hide();
+
+  // set this card to display block
+  pickedGoodsCardEl.show();
+
+  // todo edit the info on this card
+}
+
+// todo function to show life events card
+function showPickedLifeEvents() {
+  // set lifeevents and goods cards to display none
+  acquiredGoodCardEl.hide();
+  lifeEventsCardEl.hide();
+
+  //set this card to display block
+  pickedLifeEventCardEl.show();
+
+  // todo edit the info on this card
 }
 
 // todo function to check if game is over
 function checkGameOver() {
   // if current position is >= last game tile then game over
-  // else keep playing
+  if (currentPosition >= tileArray.length) {
+    pickedGoodsCardEl.hide();
+    pickedLifeEventCardEl.hide();
+
+    endGame();
+  } else {
+    characterTurnCardEl.show();
+  }
 }
 
 // todo function to end game
 function endGame() {
   // check win or lose
   // print game over and stats
+  gameOverCardEl.show();
   // play again button
 }
 
@@ -110,5 +153,15 @@ function rollDie() {
 
 // ************************ Initiating functions ************************//
 rollbtnEl.on("click", startTurn);
+lifeEventsCardbtn.on("click", showPickedLifeEvents);
+acquiredGoodCardbtn.on("click", showPickedAcquirableGoodsCard);
+pickedLifeEventCardbtn.on("click", function () {
+  pickedLifeEventCardEl.hide();
+  checkGameOver();
+});
+pickedGoodsCardbtn.on("click", function () {
+  pickedGoodsCardEl.hide();
+  checkGameOver();
+});
 
-getLifeandGoodsArrays();
+// getLifeandGoodsArrays();

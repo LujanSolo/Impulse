@@ -27,13 +27,12 @@
     </header>
 
     <main>
-      <!-- *********** Tells player who's turn it is *********** -->
-      <!-- <section class="d-flex justify-content-center text-center mt-3">
-        <a href="#" id="roll-btn" class="btn btn-primary mr-4">Roll Dice</a>
+      <!-- *********** Tells player what the dice roll is *********** -->
+      <section class="d-flex justify-content-center text-center mt-3">
         <p class="mb-0 pt-1">
           <i class="fa-solid fa-dice"></i> <span id="die-result"></span>
         </p>
-      </section> -->
+      </section>
 
       <section class="container" id="container">
         <!-- ********************* Row 1 ********************* -->
@@ -110,13 +109,7 @@
             <p class="card-text" id="p-custom">Character Stats</p>
 
             <section class="d-flex justify-content-center text-center mt-3">
-              <a href="#" id="roll-btn" class="btn btn-primary mr-4"
-                >Roll Dice</a
-              >
-              <p class="mb-0 pt-1">
-                <i class="fa-solid fa-dice"></i>
-                <span id="die-result"></span>
-              </p>
+              <a href="#" id="roll-btn" class="btn btn-primary">Roll Dice</a>
             </section>
           </div>
         </article>
@@ -168,6 +161,15 @@
             <h6 class="mt-0">Place Holder :</h6>
             <p class="card-text" id="p-custom">Place Holder</p>
             <a href="#" class="btn btn-primary picked-good-btn">Continue</a>
+          </div>
+        </article>
+
+        <!-- ************** sample game over menu ************** -->
+        <article class="card w-75 mx-auto mb-3 text-center game-over-card">
+          <div class="card-body" id="0">
+            <h2 class="card-title card-heading">GAME OVER</h2>
+            <h3 class="mt-0">Thanks for playing! Here's how you did :</h3>
+            <a href="#" class="btn btn-primary play-again-btn">Play Again?</a>
           </div>
         </article>
       </section>
