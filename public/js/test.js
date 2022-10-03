@@ -2,6 +2,7 @@
 const container = $("#container");
 const characterTurnCardEl = $(".character-turn-card");
 
+const startGameCardEl = $(".start-game-card");
 const lifeEventsCardEl = $(".life-events-card");
 const acquiredGoodCardEl = $(".acquired-good-card");
 const pickedLifeEventCardEl = $(".picked-life-events-card");
@@ -16,6 +17,9 @@ const acquiredGoodCardbtn = $(".acquired-good-btn");
 const pickedLifeEventCardbtn = $(".picked-life-btn");
 const pickedGoodsCardbtn = $(".picked-good-btn");
 const playAgainbtn = $(".play-again-btn");
+const workaholicStartbtn = $(".workaholic-start-game-btn"); //start btn
+const freeSpiritStartbtn = $(".free-spirit-start-game-btn"); //start btn
+const workLifeStartbtn = $(".work-life-start-game-btn"); //start btn
 
 // this creates an array of all the tile divs
 const tileArray = $(".col-4");
@@ -27,21 +31,43 @@ tileArray.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 let currentPosition = 0;
 let userIcon = "";
 let userMoney = 0;
-let userDopaLevel = 0; 
-
-// set dragon to starting position (this will get moved to the start game function later)
-$(tileArray[0]).addClass("fa-solid fa-dragon");
+let userDopaLevel = 0;
 
 // ************************ Functions ************************//
 
 // todo function to start game
-function startGame() {
+function startGame(event) {
+  console.log(event);
   // call function to get goods array and life events array
   // getLifeandGoodsArrays();
+
   // get response from user, add the character selected traits to local storage and to variable
+  switch (event.currentTarget.id) {
+    case "workaholic":
+      userIcon = "fa-horse";
+      userMoney = 5000;
+      userDopaLevel = 30;
+      break;
+    case "free-spirit":
+      userIcon = "fa-otter";
+      userMoney = 1000;
+      userDopaLevel = 80;
+      break;
+    case "work-life":
+      userIcon = "fa-dragon";
+      userMoney = 2500;
+      userDopaLevel = 50;
+      break;
+  }
+
   // hide startGame menu
+  startGameCardEl.hide();
+
   // show character turn el
-  // characterTurnCardEl.show();
+  characterTurnCardEl.show();
+
+  // set dragon to starting position (this will get moved to the start game function later)
+  $(tileArray[0]).addClass(`fa-solid ${userIcon}`);
 }
 
 function startTurn() {
@@ -53,13 +79,13 @@ function startTurn() {
   // get player position -- loop through divs and see if class exists
   for (let i = 0; i < tileArray.length; i++) {
     if (
-      tileArray[i].classList[tileArray[i].classList.length - 1] === "fa-dragon"
+      tileArray[i].classList[tileArray[i].classList.length - 1] === userIcon
     ) {
       const startPosition = tileArray[i].id;
       // console.log(currentPosition)
 
       // remove class in that div
-      $(tileArray[startPosition - 1]).removeClass("fa-solid fa-dragon");
+      $(tileArray[startPosition - 1]).removeClass(`fa-solid ${userIcon}`);
       // transitions opacity -- 0 - 100% in a second or so
 
       // get new position on board
@@ -72,7 +98,7 @@ function startTurn() {
   }
 
   // update position
-  $(tileArray[currentPosition - 1]).addClass("fa-solid fa-dragon");
+  $(tileArray[currentPosition - 1]).addClass(`fa-solid ${userIcon}`);
   // transitions opacity -- 0 - 100% in a second or so
 
   // todo call show card functions
@@ -164,6 +190,15 @@ function playAgain() {
 //   console.log(response);
 // };
 
+// todo function for local storage
+function getLocalStorage() {
+  // get the items 
+}
+
+function setLocalStorage() {
+  // set the items
+}
+
 // ************************ Helper Functions ************************//
 function rollDie() {
   return 1 + Math.floor(Math.random() * 4);
@@ -185,5 +220,9 @@ pickedGoodsCardbtn.on("click", function () {
   pickedGoodsCardEl.hide();
   checkGameOver();
 });
+
+workaholicStartbtn.on("click", startGame);
+freeSpiritStartbtn.on("click", startGame);
+workLifeStartbtn.on("click", startGame);
 
 playAgainbtn.on("click", playAgain);
