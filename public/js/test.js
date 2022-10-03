@@ -37,9 +37,8 @@ let userDopaLevel = 0;
 
 // todo function to start game
 function startGame(event) {
-  console.log(event);
   // call function to get goods array and life events array
-  // getLifeandGoodsArrays();
+  getLifeandGoodsArrays();
 
   // get response from user, add the character selected traits to local storage and to variable
   switch (event.currentTarget.id) {
@@ -175,24 +174,25 @@ function playAgain() {
 }
 
 // todo function to get random life events and gooods and put them in an array at beginning of game
-// const getLifeandGoodsArrays = async () => {
-//   const response = await fetch("/", {
-//     method: "GET",
-//     headers: { "Content-Type": "application/json" },
-//   });
+const getLifeandGoodsArrays = async () => {
+  const response = await fetch("/api/lifeEventRoutes", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  });
 
-//   if (response.ok) {
-//     console.log("this is okay");
-//   } else {
-//     alert(response.statusText);
-//   }
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+  } else {
+    alert(response.statusText);
+  }
 
-//   console.log(response);
-// };
+  console.log(response);
+};
 
 // todo function for local storage
 function getLocalStorage() {
-  // get the items 
+  // get the items
 }
 
 function setLocalStorage() {

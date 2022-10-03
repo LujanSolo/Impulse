@@ -1,15 +1,17 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome, {{username}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Project:</h3>
+    <h3>Create a New Life Event:</h3>
 
     <form class="form new-project-form">
-      <div class="form-group">
+      {{! todo make this a from to create a new life event or acquire good }}
+
+      {{! <div class="form-group">
         <label for="project-name">project name:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
@@ -23,11 +25,12 @@
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
-      </div>
+      </div> }}
     </form>
   </div>
 
-  {{#if projects.length}}
+  {{! todo rework to show life event added  }}
+  {{!-- {{#if projects.length}}
   <div class="col-md-6 project-list">
     <h3>Current Projects:</h3>
 
@@ -42,7 +45,7 @@
     </div>
     {{/each}}
   </div>
-  {{/if}}
+  {{/if}} --}}
 </div>
 
 <script src="./js/profile.js"></script>
