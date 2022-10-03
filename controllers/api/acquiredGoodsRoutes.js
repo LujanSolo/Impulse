@@ -10,7 +10,7 @@ const { AcquiredGoods } = require('../../models');
   } catch (err) {
     res.status(500).json(err);
   }
-});
+;
 
 router.post('/', async (req, res) => {
   try {
