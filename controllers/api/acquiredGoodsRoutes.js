@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { AcquiredGoods } = require('../../models');
 
+router.get('/', async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const goodsData = await AcquiredGoods.findAll();
@@ -10,7 +11,7 @@ const { AcquiredGoods } = require('../../models');
   } catch (err) {
     res.status(500).json(err);
   }
-});
+;
 
 router.post('/', async (req, res) => {
   try {
