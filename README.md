@@ -25,8 +25,9 @@
 
 ## How To Play
 
-  Sign Up and Log In to keep track of your scores and all of the merchandise you've acquired. From the main game page, choose your Character Class from one of the three options to start the game. <br />
-  Note: Each class has 2 attributes, <b>MONEY</b> and <b>MOOD</b> levels.<br />
+  Goal of the Game: Get to the FINISH LINE with at least
+  Sign Up and Log In to keep track of your scores and all of the merchandise you've acquired. From the main game page, choose one of three Character Classes from one of the three options to start the game. <br />
+  Note: Each class has 2 attributes, <b>MONEY</b> and <b>MOOD</b> levels<br /> which will change as the game progresses.
 
 ## Motivation
 

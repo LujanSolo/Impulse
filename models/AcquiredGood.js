@@ -34,6 +34,9 @@ AcquiredGoods.init(
         key: 'id',
       },
     },
+    url: {
+      type: DataTypes.STRING,
+    }
   },
   {
     sequelize,
