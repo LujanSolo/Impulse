@@ -121,8 +121,20 @@
   },
   {
     "product_name": "Surfboard",
-    "description": "Can you actually surf or is this more of a 'if i buy it I will hopefully do it' kind of situation?",
+    "description": "Can you actually surf or is this more of a 'if I buy it hopefully I will do it' kind of situation?",
     "money_change": -1000,
     "dopa_change": 2000
+  },
+  {
+    "product_name": "Monstera Plant",
+    "description": "The more plants inside the home the better, right? ",
+    "money_change": -50,
+    "dopa_change": 100
+  },
+  {
+    "product_name": "Manicure/Pedicure",
+    "description": "You deserve to be pampered!",
+    "money_change": -100,
+    "dopa_change": 200
   }
 ]
