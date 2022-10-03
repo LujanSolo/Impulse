@@ -17,17 +17,19 @@ const pickedLifeEventCardbtn = $(".picked-life-btn");
 const pickedGoodsCardbtn = $(".picked-good-btn");
 const playAgainbtn = $(".play-again-btn");
 
-// ************************ Global variables ************************//
 // this creates an array of all the tile divs
 const tileArray = $(".col-4");
 
-let currentPosition = 0;
-
 // this sorts the tile divs by id
 tileArray.sort((a, b) => parseInt(a.id) - parseInt(b.id));
-console.log(tileArray);
 
-// set dragon to starting position
+// ************************ Global variables ************************//
+let currentPosition = 0;
+let userIcon = "";
+let userMoney = 0;
+let userDopaLevel = 0; 
+
+// set dragon to starting position (this will get moved to the start game function later)
 $(tileArray[0]).addClass("fa-solid fa-dragon");
 
 // ************************ Functions ************************//
@@ -35,12 +37,11 @@ $(tileArray[0]).addClass("fa-solid fa-dragon");
 // todo function to start game
 function startGame() {
   // call function to get goods array and life events array
-  // get response from user, add the character selected traits to local storage and to variable 
-
+  // getLifeandGoodsArrays();
+  // get response from user, add the character selected traits to local storage and to variable
   // hide startGame menu
-  // show character turn el 
+  // show character turn el
   // characterTurnCardEl.show();
-
 }
 
 function startTurn() {
@@ -143,13 +144,13 @@ function endGame() {
   // check win or lose
   // print game over and stats
   gameOverCardEl.show();
-  // set values from local storage to user Database 
+  // set values from local storage to user Database
 }
 
 // todo function for play again
 function playAgain() {
   // clear local storage
-  // refresh play game page 
+  // refresh play game page
 }
 
 // todo function to get random life events and gooods and put them in an array at beginning of game
@@ -175,16 +176,19 @@ function rollDie() {
 
 // ************************ Initiating functions ************************//
 rollbtnEl.on("click", startTurn);
+
 lifeEventsCardbtn.on("click", showPickedLifeEvents);
+
 acquiredGoodCardbtn.on("click", showPickedAcquirableGoodsCard);
+
 pickedLifeEventCardbtn.on("click", function () {
   pickedLifeEventCardEl.hide();
   checkGameOver();
 });
+
 pickedGoodsCardbtn.on("click", function () {
   pickedGoodsCardEl.hide();
   checkGameOver();
 });
-playAgainbtn.on("click", playAgain);
 
-// getLifeandGoodsArrays();
+playAgainbtn.on("click", playAgain);
