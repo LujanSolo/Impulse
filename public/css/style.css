@@ -28,7 +28,8 @@ header,
 .life-events-card,
 .acquired-good-card,
 .picked-life-events-card,
-.picked-acquired-good-card, 
-.game-over-card {
+.picked-acquired-good-card,
+.game-over-card,
+.character-turn-card {
   display: none;
 }
