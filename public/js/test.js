@@ -81,11 +81,6 @@ function startTurn() {
   characterTurnCardEl.hide();
 }
 
-// at start turn, show both cards (each has a button to choose it)
-// at button pick, show only that card (picked card in handlebar partial)
-// add event stats to user stats
-// button to continue
-
 // todo function to show acquirable goods card
 function showAcquirableGoodsCard() {
   // set this card to display block
