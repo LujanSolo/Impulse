@@ -224,7 +224,7 @@ function endGame() {
   );
 
   gameOverCardEl.show();
-  
+
   // todo set values from local storage to user Database
 }
 
