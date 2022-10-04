@@ -2,6 +2,43 @@ body{
   font-family: 'Silkscreen';
 }
 
+.popup1{
+  width:400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50;
+  left: 40%;
+  transform: scale(0.1);
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+}
+  
+.open-popup {
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+.popup2{
+  width:400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50;
+  left: 40%;
+  transform: scale(0.1);
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+}
+
+.open-popup2 {
+  visibility: visible;
+  transform: scale(1);
+}
+
 header,
 .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
