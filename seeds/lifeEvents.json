@@ -168,7 +168,7 @@
     "dopa_change": -600
   },
   {
-  "The in-laws are visiting. There isn't enough bourbon in the world...",
+    "event_name": "The in-laws are visiting. There isn't enough bourbon in the world...",
     "description": "",
     "money_change": -1000,
     "dopa_change": -2000

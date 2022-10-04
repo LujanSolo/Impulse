@@ -5,6 +5,7 @@ const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
   try {
+    console.log('home')
     // const lifeEventsData = await LifeEvents.findAll();
     const userData = await User.findByPk(req.session.user_id);
     // const goodsData = await AcquiredGoods.findAll();
