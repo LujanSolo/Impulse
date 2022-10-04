@@ -1,48 +1,41 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/2af300434d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Test Game</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Welcome to our test game</h1>
-    </header>
-    <nav>
-      <a href="/">Home</a>
-      {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
-        <a href="/profile">Profile</a>
-      {{else}}
-        <a href="/login">Login</a>
-      {{/if}}
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/2af300434d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Test Game</title>
+</head>
 
-    <main>
-      {{{body}}}
-    </main>
-
-    {{#if loggedIn}}
-      <script src="/js/logout.js"></script>
+<body>
+  <header>
+    <h1>Welcome to our test game</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if logged_in}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    <a href="/profile">Profile</a>
+    {{else}}
+    <a href="/login">Login</a>
     {{/if}}
+  </nav>
 
-    <!-- ******************* Links ********************** -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
-    ></script>
-    <script src="./js/test.js"></script>
-  </body>
+  <main>
+    {{{body}}}
+  </main>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+  <!-- ******************* Links ********************** -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./js/test.js"></script>
+</body>
 
 </html>
