@@ -75,3 +75,57 @@ header,
 .character-turn-card {
   display: none;
 }
+
+.board {
+  height: 100%;
+  width: 90vw;
+  height: 35vw;
+  margin: 10px auto;
+}
+
+.board section {
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 25%);
+  display: flex;
+}
+
+.board section span {
+  display: block;
+  background: #fff;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  outline: 1px dashed;
+  outline-offset: -2px;
+}
+
+
+/* .row {
+	width: 100%;
+	display: flex;
+} */
+
+/* .top {
+	height: 18.384615385%;
+} */
+
+
+.verticle-squares {
+	outline: 1px solid black;
+	flex-grow: 1;
+	position: relative;
+}
+
+/* 
+.row {
+	display: grid;
+	grid-gap: 2px;
+}
+
+
+.horizontal-row {
+	grid-template-columns: repeat(9, 80px);
+	grid-template-rows: 125px;
+} */
