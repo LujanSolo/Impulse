@@ -32,6 +32,8 @@ let currentPosition = 0;
 let userIcon = "";
 let userMoney = 0;
 let userDopaLevel = 0;
+let userOwnItems = [];
+let userEventItems = [];
 
 let lifeEventsBucket = [];
 let goodsBucket = [];
@@ -105,9 +107,9 @@ function startTurn() {
   // todo transitions opacity -- 0 - 100% in a second or so
 
   // call show card functions
+  characterTurnCardEl.hide();
   showAcquirableGoodsCard();
   showLifeEvents();
-  characterTurnCardEl.hide();
 }
 
 // function to show acquirable goods card
@@ -115,7 +117,7 @@ function showAcquirableGoodsCard() {
   // set this card to display block
   acquiredGoodCardEl.show();
 
-  // edits the info on this card 
+  // edits the info on this card
   $("#product-name").text(`${goodsBucket[currentPosition].product_name}`);
   $("#product-money-stats").text(
     `Costs: ${goodsBucket[currentPosition].money_change}`
@@ -131,7 +133,7 @@ function showLifeEvents() {
   lifeEventsCardEl.show();
 }
 
-// todo function to show acquirable goods card
+// function to show acquirable goods card
 function showPickedAcquirableGoodsCard() {
   // set lifeevents and goods cards to display none
   acquiredGoodCardEl.hide();
@@ -140,7 +142,18 @@ function showPickedAcquirableGoodsCard() {
   // set this card to display block
   pickedGoodsCardEl.show();
 
-  // todo edit the info on this card
+  // update user scores
+  userMoney += goodsBucket[currentPosition].money_change;
+  userDopaLevel += goodsBucket[currentPosition].dopa_change;
+  userOwnItems.push(goodsBucket[currentPosition].product_name);
+
+  // edit the info on this card
+  $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
+  $("#picked-good-name").text(
+    `You are a proud owner of a ${goodsBucket[currentPosition].product_name}`
+  );
+  $("#new-picked-goods-money").text(`You now have: $${userMoney}`);
+  $("#new-picked-goods-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
 // todo function to show life events card
@@ -152,7 +165,15 @@ function showPickedLifeEvents() {
   //set this card to display block
   pickedLifeEventCardEl.show();
 
-  // todo edit the info on this card
+  // update user scores
+  userMoney += lifeEventsBucket[currentPosition].money_change;
+  userDopaLevel += lifeEventsBucket[currentPosition].dopa_change;
+  userEventItems.push(lifeEventsBucket[currentPosition].event_name);
+
+  // edit the info on this card
+  $("#life-event-name").text(`${lifeEventsBucket[currentPosition].event_name}`);
+  $("#new-picked-life-money").text(`You now have: $${userMoney}`);
+  $("#new-picked-life-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
 //  function to check if game is over
