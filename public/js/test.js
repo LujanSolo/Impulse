@@ -22,7 +22,7 @@ const freeSpiritStartbtn = $(".free-spirit-start-game-btn"); //start btn
 const workLifeStartbtn = $(".work-life-start-game-btn"); //start btn
 
 // this creates an array of all the tile divs
-const tileArray = $(".col-4");
+const tileArray = $(".col-1");
 
 // this sorts the tile divs by id
 tileArray.sort((a, b) => parseInt(a.id) - parseInt(b.id));
@@ -224,7 +224,7 @@ function endGame() {
   );
 
   gameOverCardEl.show();
-
+  
   // todo set values from local storage to user Database
 }
 
@@ -327,12 +327,3 @@ freeSpiritStartbtn.on("click", startGame);
 workLifeStartbtn.on("click", startGame);
 
 playAgainbtn.on("click", playAgain);
-
-var myWidget = cloudinary.createUploadWidget({
-  cloudName: 'dcfdy30wq', 
-  uploadPreset: 'my_preset'}, (error, result) => { 
-    if (!error && result && result.event === "success") { 
-      console.log('Done! Here is the image info: ', result.info); 
-    }
-  }
-)
