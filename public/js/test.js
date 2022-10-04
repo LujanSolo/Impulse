@@ -33,12 +33,16 @@ let userIcon = "";
 let userMoney = 0;
 let userDopaLevel = 0;
 
+let lifeEventsBucket = [];
+let goodsBucket = [];
+
 // ************************ Functions ************************//
 
 // todo function to start game
 function startGame(event) {
   // call function to get goods array and life events array
-  getLifeandGoodsArrays();
+  getLifeEventsArray();
+  getGoodsArray();
 
   // get response from user, add the character selected traits to local storage and to variable
   switch (event.currentTarget.id) {
@@ -170,6 +174,15 @@ function endGame() {
 // todo function for play again
 function playAgain() {
   // clear local storage
+
+  // clear buckets and values
+  currentPosition = 0;
+  userIcon = "";
+  userMoney = 0;
+  userDopaLevel = 0;
+  lifeEventsBucket = [];
+  goodsBucket = [];
+
   // hide gameOver card and remove class on last tile
   gameOverCardEl.hide();
   $(tileArray[tileArray.length - 1]).removeClass(`fa-solid ${userIcon}`);
@@ -178,7 +191,7 @@ function playAgain() {
 }
 
 // todo function to get random life events and gooods and put them in an array at beginning of game
-const getLifeandGoodsArrays = async () => {
+const getLifeEventsArray = async () => {
   const response = await fetch("/api/lifeEventRoutes", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
@@ -186,12 +199,40 @@ const getLifeandGoodsArrays = async () => {
 
   if (response.ok) {
     const data = await response.json();
-    console.log(data);
+    // shuffle the data array
+    data.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
+    // push into lifeEventBucket
+    for (let i = 0; i < tileArray.length; i++) {
+      lifeEventsBucket.push(data[i]);
+    }
   } else {
     alert(response.statusText);
   }
+  console.log(lifeEventsBucket);
+};
 
-  console.log(response);
+const getGoodsArray = async () => {
+  const response = await fetch("/api/acquiredGoodsRoutes", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    // shuffle the data array
+    data.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
+    // push into goodsBucket
+    for (let i = 0; i < tileArray.length; i++) {
+      goodsBucket.push(data[i]);
+    }
+  } else {
+    alert(response.statusText);
+  }
+  console.log(goodsBucket);
 };
 
 // todo function for local storage
