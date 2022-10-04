@@ -159,5 +159,26 @@
     "money_change": -100,
     "dopa_change": 200,
     "url": ""
-  }
+  },
+  {
+    "product_name": "Buy a carton of eggs",
+    "description": "Half of the eggs are cracked, look next time before you buy!",
+    "money_change": -5,
+    "dopa_change": 1,
+    "url": ""
+  },
+  {
+    "product_name": "New Cologne",
+    "description": "If you smell good people might want to be around you more!",
+    "money_change": -120,
+    "dopa_change": 100,
+    "url": ""
+  },
+  {
+    "product_name": "Signed Blink 182 poster",
+    "description": "It was never a phase, mom!",
+    "money_change": -220,
+    "dopa_change": 440,
+    "url": ""
+  },
 ]
