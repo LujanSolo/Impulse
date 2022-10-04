@@ -224,7 +224,7 @@ function endGame() {
   );
 
   gameOverCardEl.show();
-  
+
   // todo set values from local storage to user Database
 }
 
@@ -327,3 +327,12 @@ freeSpiritStartbtn.on("click", startGame);
 workLifeStartbtn.on("click", startGame);
 
 playAgainbtn.on("click", playAgain);
+
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'dcfdy30wq', 
+  uploadPreset: 'my_preset'}, (error, result) => { 
+    if (!error && result && result.event === "success") { 
+      console.log('Done! Here is the image info: ', result.info); 
+    }
+  }
+)

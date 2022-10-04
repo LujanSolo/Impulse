@@ -1,9 +1,9 @@
-body{
-  font-family: 'Silkscreen';
+body {
+  font-family: "Silkscreen";
 }
 
-.popup1{
-  width:400px;
+.popup1 {
+  width: 400px;
   background: #fff;
   border-radius: 6px;
   position: absolute;
@@ -13,16 +13,16 @@ body{
   padding: 0 30px 30px;
   color: #333;
   visibility: hidden;
+  z-index: 3;
 }
-  
+
 .open-popup {
   visibility: visible;
   transform: scale(1);
 }
 
-
-.popup2{
-  width:400px;
+.popup2 {
+  width: 400px;
   background: #fff;
   border-radius: 6px;
   position: absolute;
@@ -32,6 +32,7 @@ body{
   padding: 0 30px 30px;
   color: #333;
   visibility: hidden;
+  z-index: 3;
 }
 
 .open-popup2 {
