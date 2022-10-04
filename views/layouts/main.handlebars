@@ -1,8 +1,15 @@
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,32 +19,50 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Test Game</title>
+    <title>Impulse</title>
   </head>
 
-  <body>
-    <header>
-      <h1>Welcome to our test game</h1>
+  <body background="./images/SxH.gif">
+    <header class="container mt-3">
+      <h1 class="text-center text-white p-5">Impulse The Game</h1>
     </header>
+<<<<<<< HEAD
     <nav>
       <a href="/">Home</a>
+=======
+    <nav class="d-flex justify-content-center">
+      <a href="/" class="mx-2 text-white">Home</a>
+>>>>>>> 904c8ebca3875d0bfdccf3d739c9b3ea81277435
       {{#if logged_in}}
         <button id="logout" class="btn-no-style">Logout</button>
-        <a href="/profile">Profile</a>
+        <a href="/profile" class="mx-2 text-white">Profile</a>
       {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="mx-2 text-white">Login</a>
       {{/if}}
     </nav>
 
-    <main>
+    <main class="p-5" id="container">
       {{{body}}}
     </main>
 
+<<<<<<< HEAD
+=======
+    <script>
+      let popup1 = document.getElementById("popup1"); let popup2 =
+      document.getElementById("popup2"); function openPopup() {
+      popup1.classList.add("open-popup"); } ; function openPopup2() {
+      popup2.classList.add("open-popup2"); } ; function closePopup() {
+      popup1.classList.remove("open-popup"); } ; function closePopup2() {
+      popup2.classList.remove("open-popup2"); };
+    </script>
+
+>>>>>>> 904c8ebca3875d0bfdccf3d739c9b3ea81277435
     {{#if logged_in}}
       <script src="/js/logout.js"></script>
     {{/if}}
 
     <!-- ******************* Links ********************** -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"

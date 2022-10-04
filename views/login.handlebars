@@ -1,4 +1,4 @@
-<div class="row justify-space-between-md">
+{{! <div class="row justify-space-between-md">
 
   <div class="login-card ml-4">
     <h2 class="page-title">Login</h2>
@@ -15,9 +15,9 @@
         <button class="btn btn-primary" type="submit">login</button>
       </div>
     </form>
-  </div>
+  </div>  }}
 
-  <div class="login-card ml-4">
+{{! <div class="login-card ml-4">
     <h2 class="page-title">Signup</h2>
     <form class="form signup-form">
       <div class="form-group">
@@ -36,6 +36,134 @@
         <button class="btn btn-primary" type="submit">signup</button>
       </div>
     </form>
+  </div>
+
+</div>   }}
+
+{{! About button }}
+<section class="text-center mt-5">
+  <button
+    type="submit"
+    class="text-center mt-5"
+    onclick="openPopup()"
+  >About</button>
+  <div class="popup1" id="popup1">
+    <p>Information about the game and why we created it</p>
+    <button type="button" onclick="closePopup()">OK</button>
+  </div>
+</section>
+
+{{! How to play button }}
+<section class="text-center mt-5">
+  <button type="submit" class="text-center mt-5" onclick="openPopup2()">How to
+    Play</button>
+  <div class="popup2" id="popup2">
+    <p>Instructions</p>
+    <button type="button" onclick="closePopup2()">OK</button>
+  </div>
+</section>
+
+{{! Login button }}
+<section class="mt-5 text-center">
+  <button
+    onclick="document.getElementById('login-form').style.display='block'"
+    style="width:auto;"
+  >Login</button>
+</section>
+
+{{! Sign Up button }}
+<section class="mt-5 text-center">
+  <button
+    onclick="document.getElementById('sign-up-form').style.display='block'"
+    style="width:auto;"
+  >Sign Up</button>
+</section>
+
+{{! login form }}
+<div id="login-form" class="modal login-form">
+  <h2 class="page-title">Login : </h2>
+  <div class="modal-content animate" action="/action_page.php" method="post">
+    <form class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        id="email-login"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        id="password-login"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" />
+        Remember me
+      </label>
+    </form>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button
+        type="button"
+        onclick="document.getElementById('login-form').style.display='none'"
+        class="cancelbtn"
+      >Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+
+</div>
+
+{{! signup form }}
+<div id="sign-up-form" class="modal signup-form">
+  <h2 class="page-title">Signup : </h2>
+  <div class="modal-content animate" action="/action_page.php" method="post">
+    <form class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        id="username-signup"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="email-signup"><b>Email</b></label>
+      <input
+        type="text"
+        id="email-signup"
+        placeholder="Enter Email"
+        name="email-signup"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        id="password-signup"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button
+        type="button"
+        onclick="document.getElementById('sign-up-form').style.display='none'"
+        class="cancelbtn"
+      >Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
   </div>
 
 </div>

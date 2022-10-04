@@ -5,7 +5,7 @@ router.get('/', async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const goodsData = await AcquiredGoods.findAll();
-    // console.log(goodsData);
+    console.log(goodsData);
     // const userGoods = goodsData.get({ plain: true });
     res.json(goodsData)
   } catch (err) {res.status(500).json(err);};

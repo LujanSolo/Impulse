@@ -166,5 +166,71 @@
     "description": "",
     "money_change": 0,
     "dopa_change": -600
+  },
+  {
+  "The in-laws are visiting. There isn't enough bourbon in the world...",
+    "description": "",
+    "money_change": -1000,
+    "dopa_change": -2000
+  },
+  {
+    "event_name": "Stuck in traffic! You'll miss the flight.",
+    "description": "",
+    "money_change": -600,
+    "dopa_change": -1000
+  },
+  {
+    "event_name": "Stepped in dog poop.",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -250
+  },
+  {
+    "event_name": "BEND AT THE KNEES! You threw your back out.",
+    "description": "",
+    "money_change": -250,
+    "dopa_change": -1000
+  },
+  {
+    "event_name": "Your delivery food arrived cold and missing items.",
+    "description": "",
+    "money_change": -50,
+    "dopa_change": -200
+  },
+  {
+    "event_name": "Yesterday's post has received ZERO likes. You learned that dance for nothing.",
+    "description": "",
+    "money_change": -100,
+    "dopa_change": -1000
+  },
+  {
+    "event_name": "It turns out that hot-air balloon rides AREN'T your thing.",
+    "description": "",
+    "money_change": -500,
+    "dopa_change": -2000
+  },
+  {
+    "event_name": "You won free concert tickets, but they are for Jimmy Buffett.",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -300
+  },
+  {
+    "event_name": "You've discovered that you're not a sailor. Dock and boat repairs are costly!",
+    "description": "",
+    "money_change": -3000,
+    "dopa_change": -3000
+  },
+  {
+    "event_name": "Who says you can't lose big on the penny-slots in Vegas?",
+    "description": "",
+    "money_change": -2000,
+    "dopa_change": -1000
+  },
+  {
+    "event_name": "The wealthy recluse who you were nice to put you in his will!",
+    "description": "",
+    "money_change": 5000,
+    "dopa_change": 2500
   }
 ]
