@@ -148,5 +148,23 @@
     "description": "",
     "money_change": 0,
     "dopa_change": -250
+  },
+  {
+    "event_name": "Your home was broken into and trashed by hungry racoons! Time to seal up that old doggy door...",
+    "description": "",
+    "money_change": -800,
+    "dopa_change": -400
+  },
+  {
+    "event_name": "Your significant other cheated on you with Steve Buschemi",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -800
+  },
+  {
+    "event_name": "Your mother in law is in town and keeps making comments about your appearance and work ethic",
+    "description": "",
+    "money_change": 0,
+    "dopa_change": -600
   }
 ]
