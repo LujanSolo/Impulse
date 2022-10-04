@@ -69,7 +69,7 @@ function startGame(event) {
   // hide startGame menu
   startGameCardEl.hide();
 
-  // edit character card 
+  // edit character card
   updateCharacterTurnCard();
 
   // show character turn el
@@ -181,7 +181,7 @@ function showPickedLifeEvents() {
 }
 
 // update character turn card
-function updateCharacterTurnCard () {
+function updateCharacterTurnCard() {
   $("#character-name").text(userCharacterName);
   $("#character-money").text(`You have: $${userMoney}`);
   $("#character-dopa").text(`Your mood level is: ${userDopaLevel}`);
@@ -196,19 +196,36 @@ function checkGameOver() {
 
     endGame();
   } else {
-    // edit character card 
+    // edit character card
     updateCharacterTurnCard();
 
     characterTurnCardEl.show();
   }
 }
 
-// todo function to end game
+// function to end game
 function endGame() {
-  // check win or lose
+  // join arrays in a way to print
+  const goodsSummary = userOwnItems.join(" , ");
+  const lifeSummary = userEventItems.join(" , ");
+
   // print game over and stats
+  $("#final-good-amount").text(`Your final money count is : $${userMoney}`);
+  $("#final-good-dopa").text(`Your final mood level is : ${userDopaLevel}`);
+  $("#final-goods-summary").text(
+    `Shopping list complete!  
+    You are a proud owner of : 
+    ${goodsSummary}`
+  );
+  $("#final-life-summary").text(
+    `Your life has been a roller coaster!  
+    Here's some of what's happened :
+    ${lifeSummary}`
+  );
+
   gameOverCardEl.show();
-  // set values from local storage to user Database
+  
+  // todo set values from local storage to user Database
 }
 
 // todo function for play again
