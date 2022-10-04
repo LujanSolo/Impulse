@@ -115,7 +115,7 @@
                   Avatar : <span class="fa-solid fa-horse"></span>
                 </p>
                 <p class="card-text">Starting Money : $5,000</p>
-                <p class="card-text">Starting Dopamine : 30 %</p>
+                <p class="card-text">Starting Dopamine : 30</p>
                 <a
                   href="#"
                   class="btn btn-primary workaholic-start-game-btn"
@@ -131,7 +131,7 @@
                   Avatar : <span class="fa-solid fa-otter"></span>
                 </p>
                 <p class="card-text">Starting Money : $1,000</p>
-                <p class="card-text">Starting Dopamine : 80 %</p>
+                <p class="card-text">Starting Dopamine : 80</p>
                 <a
                   href="#"
                   class="btn btn-primary free-spirit-start-game-btn"
@@ -147,7 +147,7 @@
                   Avatar : <span class="fa-solid fa-dragon"></span>
                 </p>
                 <p class="card-text">Starting Money : $2,500</p>
-                <p class="card-text">Starting Dopamine : 50 %</p>
+                <p class="card-text">Starting Dopamine : 50</p>
                 <a
                   href="#"
                   class="btn btn-primary work-life-start-game-btn"
@@ -163,8 +163,12 @@
         <article class="card w-75 mx-auto mb-3 text-center character-turn-card">
           <div class="card-body" id="0">
             <h5 class="card-title card-heading">Impulse</h5>
-            <h6 class="mt-0">Character's Name :</h6>
-            <p class="card-text" id="p-custom">Character Stats</p>
+            <h6 class="mt-0">
+              Character's Name : <span id="character-name"></span>
+            </h6>
+            <p class="card-text mb-0">Character Stats:</p>
+            <p class="card-text mb-0" id="character-money">Character Stats:</p>
+            <p class="card-text" id="character-dopa">Character Stats:</p>
 
             <section class="d-flex justify-content-center text-center mt-3">
               <a href="#" id="roll-btn" class="btn btn-primary">Roll Dice</a>
@@ -175,11 +179,11 @@
         <!-- ************** Sample Life Events Card Display ************** -->
         <article class="card w-75 mx-auto mb-3 text-center life-events-card">
           <div class="card-body" id="0">
-            <h5 class="card-title card-heading">Life Events</h5>
-            <h6 class="mt-0">Place Holder :</h6>
-            <p class="card-text" id="p-custom">Place Holder</p>
+            <h5 class="card-title card-heading">Life Event Card</h5>
+            <h6 class="mt-0">A random life event card from the deck</h6>
+            <p class="card-text" style="font-size: 50px">?</p>
             <a href="#" class="btn btn-primary life-event-btn"
-              >Choose life event</a
+              >Choose Life Event</a
             >
           </div>
         </article>
@@ -187,11 +191,12 @@
         <!-- ************** Sample Acquired Goods Card Display ************** -->
         <article class="card w-75 mx-auto mb-3 text-center acquired-good-card">
           <div class="card-body" id="0">
-            <h5 class="card-title card-heading">Acquired Goods</h5>
-            <h6 class="mt-0">Place Holder :</h6>
-            <p class="card-text" id="p-custom">Place Holder</p>
+            <h5 class="card-title card-heading">Acquired Good Card</h5>
+            <h6 class="mt-0" id="product-name">Placeholder</h6>
+            <p class="card-text mb-0" id="product-money-stats">Placeholder</p>
+            <p class="card-text" id="product-mood-stats">Placeholder</p>
             <a href="#" class="btn btn-primary acquired-good-btn"
-              >Choose Acquired Goods</a
+              >Buy Acquired Goods</a
             >
           </div>
         </article>
@@ -201,9 +206,12 @@
           class="card w-75 mx-auto mb-3 text-center picked-life-events-card"
         >
           <div class="card-body" id="0">
-            <h5 class="card-title card-heading">you choose lifeEventsCard</h5>
-            <h6 class="mt-0">Place Holder :</h6>
-            <p class="card-text" id="p-custom">Place Holder</p>
+            <h5 class="card-title card-heading">
+              You choose a Life Events Card
+            </h5>
+            <h6 class="mt-0" id="life-event-name">Place Holder :</h6>
+            <p class="card-text" id="new-picked-life-money">Place Holder</p>
+            <p class="card-text" id="new-picked-life-dopa">Place Holder</p>
             <a href="#" class="btn btn-primary picked-life-btn">Continue</a>
           </div>
         </article>
@@ -214,10 +222,12 @@
         >
           <div class="card-body" id="0">
             <h5 class="card-title card-heading">
-              you choose acquiredGoodsCard
+              You choose an Acquired Goods Card!
             </h5>
-            <h6 class="mt-0">Place Holder :</h6>
-            <p class="card-text" id="p-custom">Place Holder</p>
+            <h6 class="mt-0" id="goods-description">Place Holder :</h6>
+            <p class="card-text mb-0" id="picked-good-name">Place Holder</p>
+            <p class="card-text" id="new-picked-goods-money">Place Holder</p>
+            <p class="card-text" id="new-picked-goods-dopa">Place Holder</p>
             <a href="#" class="btn btn-primary picked-good-btn">Continue</a>
           </div>
         </article>
@@ -226,7 +236,11 @@
         <article class="card w-75 mx-auto mb-3 text-center game-over-card">
           <div class="card-body" id="0">
             <h2 class="card-title card-heading">GAME OVER</h2>
-            <h3 class="mt-0">Thanks for playing! Here's how you did :</h3>
+            <h4 class="mt-0">Thanks for playing! Here's how you did :</h4>
+            <p class="card-text mb-0" id="final-good-amount">Place Holder</p>
+            <p class="card-text" id="final-good-dopa">Place Holder</p>
+            <p class="card-text" id="final-goods-summary">Place Holder</p>
+            <p class="card-text" id="final-life-summary">Place Holder</p>
             <a href="#" class="btn btn-primary play-again-btn">Play Again?</a>
           </div>
         </article>

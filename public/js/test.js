@@ -32,13 +32,20 @@ let currentPosition = 0;
 let userIcon = "";
 let userMoney = 0;
 let userDopaLevel = 0;
+let userCharacterName = "MyName";
+let userOwnItems = [];
+let userEventItems = [];
+
+let lifeEventsBucket = [];
+let goodsBucket = [];
 
 // ************************ Functions ************************//
 
-// todo function to start game
+// function to start game
 function startGame(event) {
   // call function to get goods array and life events array
-  getLifeandGoodsArrays();
+  getLifeEventsArray();
+  getGoodsArray();
 
   // get response from user, add the character selected traits to local storage and to variable
   switch (event.currentTarget.id) {
@@ -61,6 +68,9 @@ function startGame(event) {
 
   // hide startGame menu
   startGameCardEl.hide();
+
+  // edit character card
+  updateCharacterTurnCard();
 
   // show character turn el
   characterTurnCardEl.show();
@@ -98,31 +108,36 @@ function startTurn() {
 
   // update position
   $(tileArray[currentPosition - 1]).addClass(`fa-solid ${userIcon}`);
-  // transitions opacity -- 0 - 100% in a second or so
+  // todo transitions opacity -- 0 - 100% in a second or so
 
-  // todo call show card functions
+  // call show card functions
+  characterTurnCardEl.hide();
   showAcquirableGoodsCard();
   showLifeEvents();
-  characterTurnCardEl.hide();
 }
 
-// todo function to show acquirable goods card
+// function to show acquirable goods card
 function showAcquirableGoodsCard() {
   // set this card to display block
   acquiredGoodCardEl.show();
 
-  // todo edit the info on this card
+  // edits the info on this card
+  $("#product-name").text(`${goodsBucket[currentPosition].product_name}`);
+  $("#product-money-stats").text(
+    `Costs: ${goodsBucket[currentPosition].money_change}`
+  );
+  $("#product-mood-stats").text(
+    `Mood Change: ${goodsBucket[currentPosition].dopa_change}`
+  );
 }
 
-// todo function to show life events card
+// function to show life events card
 function showLifeEvents() {
   //set this card to display block
   lifeEventsCardEl.show();
-
-  // todo edit the info on this card
 }
 
-// todo function to show acquirable goods card
+// function to show acquirable goods card
 function showPickedAcquirableGoodsCard() {
   // set lifeevents and goods cards to display none
   acquiredGoodCardEl.hide();
@@ -131,10 +146,21 @@ function showPickedAcquirableGoodsCard() {
   // set this card to display block
   pickedGoodsCardEl.show();
 
-  // todo edit the info on this card
+  // update user scores
+  userMoney += goodsBucket[currentPosition].money_change;
+  userDopaLevel += goodsBucket[currentPosition].dopa_change;
+  userOwnItems.push(goodsBucket[currentPosition].product_name);
+
+  // edit the info on this card
+  $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
+  $("#picked-good-name").text(
+    `You are a proud owner of a ${goodsBucket[currentPosition].product_name}`
+  );
+  $("#new-picked-goods-money").text(`You now have: $${userMoney}`);
+  $("#new-picked-goods-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
-// todo function to show life events card
+// function to show life events card
 function showPickedLifeEvents() {
   // set lifeevents and goods cards to display none
   acquiredGoodCardEl.hide();
@@ -143,10 +169,25 @@ function showPickedLifeEvents() {
   //set this card to display block
   pickedLifeEventCardEl.show();
 
-  // todo edit the info on this card
+  // update user scores
+  userMoney += lifeEventsBucket[currentPosition].money_change;
+  userDopaLevel += lifeEventsBucket[currentPosition].dopa_change;
+  userEventItems.push(lifeEventsBucket[currentPosition].event_name);
+
+  // edit the info on this card
+  $("#life-event-name").text(`${lifeEventsBucket[currentPosition].event_name}`);
+  $("#new-picked-life-money").text(`You now have: $${userMoney}`);
+  $("#new-picked-life-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
-// todo function to check if game is over
+// update character turn card
+function updateCharacterTurnCard() {
+  $("#character-name").text(userCharacterName);
+  $("#character-money").text(`You have: $${userMoney}`);
+  $("#character-dopa").text(`Your mood level is: ${userDopaLevel}`);
+}
+
+//  function to check if game is over
 function checkGameOver() {
   // if current position is >= last game tile then game over
   if (currentPosition >= tileArray.length) {
@@ -155,26 +196,58 @@ function checkGameOver() {
 
     endGame();
   } else {
+    // edit character card
+    updateCharacterTurnCard();
+
     characterTurnCardEl.show();
   }
 }
 
-// todo function to end game
+// function to end game
 function endGame() {
-  // check win or lose
+  // join arrays in a way to print
+  const goodsSummary = userOwnItems.join(" , ");
+  const lifeSummary = userEventItems.join(" , ");
+
   // print game over and stats
+  $("#final-good-amount").text(`Your final money count is : $${userMoney}`);
+  $("#final-good-dopa").text(`Your final mood level is : ${userDopaLevel}`);
+  $("#final-goods-summary").text(
+    `Shopping list complete!  
+    You are a proud owner of : 
+    ${goodsSummary}`
+  );
+  $("#final-life-summary").text(
+    `Your life has been a roller coaster!  
+    Here's some of what's happened :
+    ${lifeSummary}`
+  );
+
   gameOverCardEl.show();
-  // set values from local storage to user Database
+  
+  // todo set values from local storage to user Database
 }
 
 // todo function for play again
 function playAgain() {
-  // clear local storage
+  // todo clear local storage
+
+  // clear buckets and values
+  currentPosition = 0;
+  userMoney = 0;
+  userDopaLevel = 0;
+  lifeEventsBucket = [];
+  goodsBucket = [];
+
+  // hide gameOver card and remove class on last tile
+  gameOverCardEl.hide();
+  $(tileArray[tileArray.length - 1]).removeClass(`fa-solid ${userIcon}`);
   // refresh play game page
+  startGameCardEl.show();
 }
 
-// todo function to get random life events and gooods and put them in an array at beginning of game
-const getLifeandGoodsArrays = async () => {
+// functions to get random life events and gooods and put them in an array at beginning of game
+const getLifeEventsArray = async () => {
   const response = await fetch("/api/lifeEventRoutes", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
@@ -182,12 +255,40 @@ const getLifeandGoodsArrays = async () => {
 
   if (response.ok) {
     const data = await response.json();
-    console.log(data);
+    // shuffle the data array
+    data.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
+    // push into lifeEventBucket
+    for (let i = 0; i < tileArray.length; i++) {
+      lifeEventsBucket.push(data[i]);
+    }
   } else {
     alert(response.statusText);
   }
+  console.log(lifeEventsBucket);
+};
 
-  console.log(response);
+const getGoodsArray = async () => {
+  const response = await fetch("/api/acquiredGoodsRoutes", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    // shuffle the data array
+    data.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
+    // push into goodsBucket
+    for (let i = 0; i < tileArray.length; i++) {
+      goodsBucket.push(data[i]);
+    }
+  } else {
+    alert(response.statusText);
+  }
+  console.log(goodsBucket);
 };
 
 // todo function for local storage
