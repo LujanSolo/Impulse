@@ -177,7 +177,6 @@ function playAgain() {
 
   // clear buckets and values
   currentPosition = 0;
-  userIcon = "";
   userMoney = 0;
   userDopaLevel = 0;
   lifeEventsBucket = [];
