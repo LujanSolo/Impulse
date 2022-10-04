@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Test Game</title>
   </head>
-  <body>
+  <body background="./images/cityview.gif">
     <header>
       <section class="container mt-3">
         <nav
@@ -87,7 +87,7 @@
                   </article>
           
                   <!-- **this is the screen that will have all the character stats info and roll dice button ** -->
-                  <article class="card w-75 mx-auto mb-3 text-center character-turn-card">
+                  <article class="card w-75 mx-auto mb-3 mt-4 text-center character-turn-card">
                     <div class="card-body" id="0">
                       <h5 class="card-title card-heading">Impulse</h5>
                       <h6 class="mt-0">Character's Name :</h6>
@@ -100,7 +100,7 @@
                   </article>
           
                   <!-- ************** Sample Life Events Card Display ************** -->
-                  <article class="card w-75 mx-auto mb-3 text-center life-events-card">
+                  <article class="card w-75 mx-auto mb-3 mt-4 text-center life-events-card">
                     <div class="card-body" id="0">
                       <h5 class="card-title card-heading">Life Events</h5>
                       <h6 class="mt-0">Place Holder :</h6>
@@ -112,7 +112,7 @@
                   </article>
           
                   <!-- ************** Sample Acquired Goods Card Display ************** -->
-                  <article class="card w-75 mx-auto mb-3 text-center acquired-good-card">
+                  <article class="card w-75 mx-auto mb-3 mt-4 text-center acquired-good-card">
                     <div class="card-body" id="0">
                       <h5 class="card-title card-heading">Acquired Goods</h5>
                       <h6 class="mt-0">Place Holder :</h6>
@@ -125,7 +125,7 @@
           
                   <!-- ************** Sample Picked Life Events Card Display ************** -->
                   <article
-                    class="card w-75 mx-auto mb-3 text-center picked-life-events-card"
+                    class="card w-75 mx-auto mb-3 mt-4 text-center picked-life-events-card"
                   >
                     <div class="card-body" id="0">
                       <h5 class="card-title card-heading">you choose lifeEventsCard</h5>
@@ -137,7 +137,7 @@
           
                   <!-- ************** Sample Picked Acquired Goods Card Display ************** -->
                   <article
-                    class="card w-75 mx-auto mb-3 text-center picked-acquired-good-card"
+                    class="card w-75 mx-auto mb-3 mt-4 text-center picked-acquired-good-card"
                   >
                     <div class="card-body" id="0">
                       <h5 class="card-title card-heading">
@@ -147,7 +147,15 @@
                       <p class="card-text" id="p-custom">Place Holder</p>
                       <a href="#" class="btn btn-primary picked-good-btn">Continue</a>
                     </div>
+                  </article>       <!-- ************** sample game over menu ************** -->
+                  <article class="card w-75 mx-auto mb-3 mt-4 text-center game-over-card">
+                    <div class="card-body" id="0">
+                      <h2 class="card-title card-heading">GAME OVER</h2>
+                      <h3 class="mt-0">Thanks for playing! Here's how you did :</h3>
+                      <a href="#" class="btn btn-primary play-again-btn">Play Again?</a>
+                    </div>
                   </article>
+                </section>
       <!-- *********** Tells player what the dice roll is *********** -->
       <section class="d-flex justify-content-center text-center mt-3">
         <p class="mb-0 pt-1">
@@ -155,7 +163,7 @@
         </p>
       </section>
 
-      <section class="container" id="container">
+      <section class="container" style=background-color:#ffff id="table">
         <!-- ********************* Row 1 ********************* -->
         <article class="row mt-3" style="height: 130px">
           <div class="col-4 border border-dark text-center" id="5">
@@ -221,17 +229,6 @@
             <p class="mb-0">11</p>
           </div>
         </article>
-
-
-        <!-- ************** sample game over menu ************** -->
-        <article class="card w-75 mx-auto mb-3 text-center game-over-card">
-          <div class="card-body" id="0">
-            <h2 class="card-title card-heading">GAME OVER</h2>
-            <h3 class="mt-0">Thanks for playing! Here's how you did :</h3>
-            <a href="#" class="btn btn-primary play-again-btn">Play Again?</a>
-          </div>
-        </article>
-      </section>
     </main>
 
     <!-- ******************* Links ********************** -->
