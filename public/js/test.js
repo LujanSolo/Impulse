@@ -32,6 +32,7 @@ let currentPosition = 0;
 let userIcon = "";
 let userMoney = 0;
 let userDopaLevel = 0;
+let userCharacterName = "MyName";
 let userOwnItems = [];
 let userEventItems = [];
 
@@ -67,6 +68,9 @@ function startGame(event) {
 
   // hide startGame menu
   startGameCardEl.hide();
+
+  // edit character card 
+  updateCharacterTurnCard();
 
   // show character turn el
   characterTurnCardEl.show();
@@ -156,7 +160,7 @@ function showPickedAcquirableGoodsCard() {
   $("#new-picked-goods-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
-// todo function to show life events card
+// function to show life events card
 function showPickedLifeEvents() {
   // set lifeevents and goods cards to display none
   acquiredGoodCardEl.hide();
@@ -176,6 +180,13 @@ function showPickedLifeEvents() {
   $("#new-picked-life-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
 
+// update character turn card
+function updateCharacterTurnCard () {
+  $("#character-name").text(userCharacterName);
+  $("#character-money").text(`You have: $${userMoney}`);
+  $("#character-dopa").text(`Your mood level is: ${userDopaLevel}`);
+}
+
 //  function to check if game is over
 function checkGameOver() {
   // if current position is >= last game tile then game over
@@ -185,6 +196,9 @@ function checkGameOver() {
 
     endGame();
   } else {
+    // edit character card 
+    updateCharacterTurnCard();
+
     characterTurnCardEl.show();
   }
 }
