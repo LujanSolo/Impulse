@@ -12,28 +12,32 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 />
 <link rel="stylesheet" href="../public/css/style.css" />
- <script src='main.js'></script>
-<title style=>Impulse</title>
-<body background="./images/moderncity.jpg ">
+<title>Impulse</title>
+</head>
+
+<body background="./images/SxH.gif">
     <header class="container mt-3">
-        <h1 class="justify-content-center text-center text-white">Impulse The Game</a>
+        <h1 class="text-center text-white p-5">Impulse The Game</a>
     </header>
-    <main>
-        <section class="justify-content-center text-center mt-5">
-            <h2 class="text-white">About</h2>
+    <main class="p-5" id="container">
+        <section class="text-center mt-5">
+        <button type="submit" class="text-center mt-5" onclick="openPopup()">About</button>
+        <div class="popup1" id="popup1">
+            <p>Information about the game and why we created it</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
         </section>
-        <section class="justify-content-center text-center mt-5">
-            <p class="text-white">Description of what the game is and purpose</p>
-        </section>
+        <section class="text-center mt-5">
+            <button type="submit" class="text-center mt-5" onclick="openPopup2()">How to Play</button>
+            <div class="popup2" id="popup2">
+                <p>Instructions</p>
+                <button type="button" onclick="closePopup2()">OK</button>
+            </div>
+            </section>
 
-        <section class="justify-content-center text-center mt-5">
-            <h2 class="text-white">How to Play</h2>
-        </section>
-        <section class="justify-content-center text-center mt-5">
-            <p class="text-white">Insert instructions here</p>
-        </section>
-
+        <section class="mt-5 text-center">
         <button onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
+        </section>
 
     <div id="login-form" class="modal">
   
@@ -58,5 +62,24 @@
     </form>
     </div>
     </main>
+    <script>
+    let popup1 = document.getElementById("popup1");
+    let popup2 = document.getElementById("popup2")
+
+    function openPopup() {
+        popup1.classList.add("open-popup");
+    }    
+    function openPopup2() {
+        popup2.classList.add("open-popup2");
+    }    
+
+    function closePopup() {
+        popup1.classList.remove("open-popup");
+    }
+
+    function closePopup2() {
+        popup1.classList.remove("open-popup2");
+    }
+    </script>
 </body>
 </html>
