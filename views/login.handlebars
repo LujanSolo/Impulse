@@ -15,9 +15,9 @@
         <button class="btn btn-primary" type="submit">login</button>
       </div>
     </form>
-  </div> }}
+  </div>  }}
 
-{{!-- <div class="login-card ml-4">
+{{! <div class="login-card ml-4">
     <h2 class="page-title">Signup</h2>
     <form class="form signup-form">
       <div class="form-group">
@@ -38,7 +38,7 @@
     </form>
   </div>
 
-</div>   --}}
+</div>   }}
 
 {{! About button }}
 <section class="text-center mt-5">
@@ -80,10 +80,10 @@
 </section>
 
 {{! login form }}
-<div id="login-form" class="modal">
+<div id="login-form" class="modal login-form">
   <h2 class="page-title">Login : </h2>
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="container">
+  <div class="modal-content animate" action="/action_page.php" method="post">
+    <form class="container">
       <label for="uname"><b>Username</b></label>
       <input
         type="text"
@@ -107,7 +107,7 @@
         <input type="checkbox" checked="checked" name="remember" />
         Remember me
       </label>
-    </div>
+    </form>
 
     <div class="container" style="background-color:#f1f1f1">
       <button
@@ -117,26 +117,44 @@
       >Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-  </form>
+  </div>
 
 </div>
 
 {{! signup form }}
-<div id="sign-up-form" class="modal">
+<div id="sign-up-form" class="modal signup-form">
   <h2 class="page-title">Signup : </h2>
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="container">
+  <div class="modal-content animate" action="/action_page.php" method="post">
+    <form class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" id="username-signup" placeholder="Enter Username" name="uname" required />
+      <input
+        type="text"
+        id="username-signup"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
 
       <label for="email-signup"><b>Email</b></label>
-      <input type="text" id="email-signup" placeholder="Enter Email" name="email-signup" required />
+      <input
+        type="text"
+        id="email-signup"
+        placeholder="Enter Email"
+        name="email-signup"
+        required
+      />
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" id="password-signup" placeholder="Enter Password" name="psw" required />
+      <input
+        type="password"
+        id="password-signup"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
 
       <button type="submit">Sign Up</button>
-    </div>
+    </form>
 
     <div class="container" style="background-color:#f1f1f1">
       <button
@@ -146,7 +164,7 @@
       >Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-  </form>
+  </div>
 
 </div>
 
