@@ -38,7 +38,7 @@ let goodsBucket = [];
 
 // ************************ Functions ************************//
 
-// todo function to start game
+// function to start game
 function startGame(event) {
   // call function to get goods array and life events array
   getLifeEventsArray();
@@ -102,28 +102,33 @@ function startTurn() {
 
   // update position
   $(tileArray[currentPosition - 1]).addClass(`fa-solid ${userIcon}`);
-  // transitions opacity -- 0 - 100% in a second or so
+  // todo transitions opacity -- 0 - 100% in a second or so
 
-  // todo call show card functions
+  // call show card functions
   showAcquirableGoodsCard();
   showLifeEvents();
   characterTurnCardEl.hide();
 }
 
-// todo function to show acquirable goods card
+// function to show acquirable goods card
 function showAcquirableGoodsCard() {
   // set this card to display block
   acquiredGoodCardEl.show();
 
-  // todo edit the info on this card
+  // edits the info on this card 
+  $("#product-name").text(`${goodsBucket[currentPosition].product_name}`);
+  $("#product-money-stats").text(
+    `Costs: ${goodsBucket[currentPosition].money_change}`
+  );
+  $("#product-mood-stats").text(
+    `Mood Change: ${goodsBucket[currentPosition].dopa_change}`
+  );
 }
 
-// todo function to show life events card
+// function to show life events card
 function showLifeEvents() {
   //set this card to display block
   lifeEventsCardEl.show();
-
-  // todo edit the info on this card
 }
 
 // todo function to show acquirable goods card
@@ -150,7 +155,7 @@ function showPickedLifeEvents() {
   // todo edit the info on this card
 }
 
-// todo function to check if game is over
+//  function to check if game is over
 function checkGameOver() {
   // if current position is >= last game tile then game over
   if (currentPosition >= tileArray.length) {
@@ -173,7 +178,7 @@ function endGame() {
 
 // todo function for play again
 function playAgain() {
-  // clear local storage
+  // todo clear local storage
 
   // clear buckets and values
   currentPosition = 0;
@@ -189,7 +194,7 @@ function playAgain() {
   startGameCardEl.show();
 }
 
-// todo function to get random life events and gooods and put them in an array at beginning of game
+// functions to get random life events and gooods and put them in an array at beginning of game
 const getLifeEventsArray = async () => {
   const response = await fetch("/api/lifeEventRoutes", {
     method: "GET",
