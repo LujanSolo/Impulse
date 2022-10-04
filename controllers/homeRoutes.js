@@ -6,17 +6,17 @@ const withAuth = require("../utils/auth");
 router.get("/", withAuth, async (req, res) => {
   try {
     // const lifeEventsData = await LifeEvents.findAll();
-    const userData = await User.findAll();
+    const userData = await User.findByPk(req.session.user_id);
     // const goodsData = await AcquiredGoods.findAll();
 
     // Serialize data so the template can read it
-    const user = userData.map((user) => user.get({ plain: true }));
+    const user = userData.get({ plain: true });
     // const lifeEvents = lifeEventsData.map((lifeEvents) => lifeEvents.get({ plain: true }));
     // const goods = goodsData.map((goods) => goods.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render("homepage", {
-      user,
+      ...user,
       logged_in: req.session.logged_in,
     });
     // res.json({
