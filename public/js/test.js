@@ -170,7 +170,11 @@ function endGame() {
 // todo function for play again
 function playAgain() {
   // clear local storage
+  // hide gameOver card and remove class on last tile
+  gameOverCardEl.hide();
+  $(tileArray[tileArray.length - 1]).removeClass(`fa-solid ${userIcon}`);
   // refresh play game page
+  startGameCardEl.show();
 }
 
 // todo function to get random life events and gooods and put them in an array at beginning of game
