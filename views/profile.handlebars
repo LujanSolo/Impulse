@@ -1,51 +1,15 @@
-<div class="row">
-  <div class="col-auto">
-    <h2 class="text-white">Welcome, {{username}}!</h2>
+<div class="row mt-4">
+  <div class="col-12">
+    <h2 class="bg-light text-center mx-auto" style="width: 600px;">Welcome,
+      {{username}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
-  <div class="col-md-6">
-    <h3 class="text-white">Create a New Life Event:</h3><button id="upload_widget" class="cloudinary-button">Upload files</button>
-
-    <form class="form new-project-form">
-      {{! todo make this a from to create a new life event or acquire good }}
-
-      {{! <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div> }}
-    </form>
+  <div class="col-12 d-flex">
+    <button id="upload_widget" class="cloudinary-button mx-auto">Upload files
+    </button>
   </div>
-
-  {{! todo rework to show life event added  }}
-  {{!-- {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
-
-    {{#each projects as |project|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}} --}}
 </div>
 
 <script src="./js/profile.js"></script>
