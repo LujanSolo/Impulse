@@ -4,7 +4,7 @@
 
 ## Link to Game (hosted on Heroku)
 
-[IMPULSE! - <i>the game where you just can't stop...</i>](http://placeholder)
+[IMPULSE! - <i>the game where you just can't stop...</i>](https://impulse-the-game.herokuapp.com/)
 
 ## Table of Contents
 - [Description](#description)
@@ -42,6 +42,18 @@
 
 
 ## Screenshots
+### <u>The Game Board:</u>
+
+![game board with character options](/public/images/main-board.png)
+<br />
+
+### <u>The Login Page:</u>
+![login page with username, email, and password](/public/images/game-login.png)
+<br />
+
+### <u>User Profile Page:</u>
+![Profile Page with logged in user shown](/public/images/game-profile.png)
+
 
 ## Contributors
 
