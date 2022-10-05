@@ -1,4 +1,96 @@
-<main class="p-3">
+<main>
+    <!-- *********** Tells player what the dice roll is *********** -->
+    <section class="d-flex justify-content-center text-center mx-auto mt-3 bg-light" style="width: 100px;">
+        <p class="mb-0 pt-1 justify-content-center"><img src="./images/impulse-d4.png" id="d4"></img> <span id="die-result"></span></p>
+
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+
+            <div class="col-7 board">
+
+              <section id="tiles">
+                <span class="col-1" id="1">1</span>
+           
+                <span class="col-1" id="2">2</span>
+          
+                <span class="col-1" id="3">3</span>
+      
+                <span class="col-1" id="4">4</span>
+      
+                <span class="col-1" id="5">5</span>
+      
+              </section>
+      
+              <section>
+                <span class="col-1" id="10">10</span>
+      
+                <span class="col-1" id="9">9</span>
+             
+                <span class="col-1" id="8">8</span>
+         
+                <span class="col-1" id="7">7</span>
+         
+                <span class="col-1" id="6">6</span>
+              </section>
+      
+              <section>
+                <span class="col-1" id="11">11</span>
+                      
+                <span class="col-1" id="12">12</span>
+             
+                <span class="col-1" id="13">13</span>
+         
+                <span class="col-1" id="14">14</span>
+         
+                <span class="col-1" id="15">15</span>
+              </section>
+                  
+                  
+              <section>
+                <span class="col-1" id="20">20🏁</span>
+      
+                <span class="col-1" id="19">19</span>
+             
+                <span class="col-1" id="18">18</span>
+         
+                <span class="col-1" id="17">17</span>
+         
+                <span class="col-1" id="16">16</span>
+              </section>
+                  
+            </div>
+
+            <div class="col-5 mt-4">
+                {{> startGameCard}}
+
+                {{> characterTurnMenu}}
+
+                {{> acquiredGoodsCard}}
+
+                {{> lifeEventsCard}}
+
+                {{> pickedAcquiredGoodsCard}}
+
+                {{> pickedLifeEventsCard}}
+                    
+                {{> gameOverMenu}}
+
+            </div> 
+
+          
+        </div>
+    </section>
+
+ 
+
+</main>
+
+
+
+
+{{!-- <main class="p-3">
 
     {{> startGameCard}}
 
@@ -72,4 +164,4 @@
 
     </div>
 
-</main>
+</main> --}}
