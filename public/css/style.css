@@ -116,11 +116,9 @@ header,
   position: relative;
 }
 
-.d4 {
-  background-image: url(./images/impulse-d4.png);
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+#d4 {
+  width: 25px;
+  height: 25px;
   z-index: 3;
 }
 
