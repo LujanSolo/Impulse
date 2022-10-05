@@ -116,7 +116,7 @@ header,
   position: relative;
 }
 
-#d4 {
+.d4 {
   background-image: url(./images/impulse-d4.png);
   background-repeat: no-repeat;
   width: 100px;

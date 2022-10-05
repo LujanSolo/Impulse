@@ -1,84 +1,71 @@
+    {{> startGameCard}}
+
+    {{> characterTurnMenu}}
+
+    {{> acquiredGoodsCard}}
+
+    {{> lifeEventsCard}}
+
+    {{> pickedAcquiredGoodsCard}}
+
+    {{> pickedLifeEventsCard}}
+            
+    {{> gameOverMenu}}
+
 <section class="bg-light d-flex justify-content-center text-center my-3 mx-auto py-2" style="width: 100px">
     <p class="mb-0 pt-1 justify-content-center"><i class="fa-solid fa-dice"></i> <span id="die-result"></span></p>
 </section>
 
-<section class="container bg-light" id="container">
-            <!-- ********************* Row 1 ********************* -->
-            <article class="row mt-3" style="height: 130px;">
-                <div class="col-4 border border-dark text-center" id="5">
-                    <p class="mb-0">5</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="6">
-                    <p class="mb-0">6</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="7">
-                    <p class="mb-0">7</p>
-                </div>
-            </article>
+<div class="board" id="container">
 
-            <!-- ********************* Row 2 ********************* -->
-            <article class="row " style="height: 131px;">
-                <div class="col-4 border border-dark text-center" id="4">
-                    <p class="mb-0">4</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="15">
-                    <p class="mb-0">15</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="8">
-                    <p class="mb-0">8</p>
-                </div>
-            </article>
+    <section id="tiles">
+        <span class="col-1" id="1">1</span>
+     
+        <span class="col-1" id="2">2</span>
+    
+        <span class="col-1" id="3">3</span>
 
-            <!-- ********************* Row 3 ********************* -->
-            <article class="row " style="height: 131px;">
-                <div class="col-4 border border-dark text-center" id="3">
-                    <p class="mb-0">3</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="14">
-                    <p class="mb-0">14</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="9">
-                    <p class="mb-0">9</p>
-                </div>
-            </article>
+        <span class="col-1" id="4">4</span>
 
-            <!-- ********************* Row 4 ********************* -->
-            <article class="row " style="height: 131px;">
-                <div class="col-4 border border-dark text-center" id="2">
-                    <p class="mb-0">2</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="13">
-                    <p class="mb-0">13</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="10">
-                    <p class="mb-0">10</p>
-                </div>
-            </article>
+        <span class="col-1" id="5">5</span>
 
-            <!-- ********************* Row 5 ********************* -->
-            <article class="row mb-3" style="height: 130px;">
-                <div class="col-4 border border-dark text-center" id="1">
-                    <p class="mb-0">1</p>
-                    <!-- <i class="fa-solid fa-dragon"></i> -->
-                </div>
-                <div class="col-4 border border-dark text-center" id="12">
-                    <p class="mb-0">12</p>
-                </div>
-                <div class="col-4 border border-dark text-center" id="11">
-                    <p class="mb-0">11</p>
-                </div>
-            </article>
+    </section>
 
-            {{> startGameCard}}
+    <section>
+        <span class="col-1" id="10">10</span>
 
-            {{> characterTurnMenu}}
+        <span class="col-1" id="9">9</span>
+       
+        <span class="col-1" id="8">8</span>
+   
+        <span class="col-1" id="7">7</span>
+   
+        <span class="col-1" id="6">6</span>
+    </section>
 
-            {{> acquiredGoodsCard}}
-
-            {{> lifeEventsCard}}
-
-            {{> pickedAcquiredGoodsCard}}
-
-            {{> pickedLifeEventsCard}}
+    <section>
+        <span class="col-1" id="11">11</span>
+                
+        <span class="col-1" id="12">12</span>
+       
+        <span class="col-1" id="13">13</span>
+   
+        <span class="col-1" id="14">14</span>
+   
+        <span class="col-1" id="15">15</span>
+    </section>
             
-            {{> gameOverMenu}}
+            
+    <section>
+        <span class="col-1" id="20">20🏁</span>
+
+        <span class="col-1" id="19">19</span>
+       
+        <span class="col-1" id="18">18</span>
+   
+        <span class="col-1" id="17">17</span>
+   
+        <span class="col-1" id="16">16</span>
+    </section>
+
+</div>

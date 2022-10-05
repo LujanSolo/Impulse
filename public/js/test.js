@@ -200,6 +200,7 @@ document.getElementById("20").addEventListener("mouseover", function () {
 document.getElementById("20").addEventListener("mouseout", function () {
   document.getElementById("20").style.backgroundColor ="white";
 });
+
 // function to start game
 function startGame(event) {
   // call function to get goods array and life events array
@@ -487,14 +488,14 @@ workLifeStartbtn.on("click", startGame);
 
 playAgainbtn.on("click", playAgain);
 
-var myWidget = cloudinary.createUploadWidget(
-  {
-    cloudName: "dcfdy30wq",
-    uploadPreset: "my_preset",
-  },
-  (error, result) => {
-    if (!error && result && result.event === "success") {
-      console.log("Done! Here is the image info: ", result.info);
-    }
-  }
-);
+// var myWidget = cloudinary.createUploadWidget(
+//   {
+//     cloudName: "dcfdy30wq",
+//     uploadPreset: "my_preset",
+//   },
+//   (error, result) => {
+//     if (!error && result && result.event === "success") {
+//       console.log("Done! Here is the image info: ", result.info);
+//     }
+//   }
+// );
