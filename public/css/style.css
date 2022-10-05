@@ -78,15 +78,17 @@ header,
 
 .board {
   height: 100%;
-  width: 90vw;
-  height: 35vw;
-  margin: 10px auto;
+  width: 100%;
+  /* height: 35vw; */
+  margin: -20px auto;
 }
 
 .board section {
   top: 50%;
   left: 50%;
-  transform: translate(25%, 25%);
+  height: 100%;
+  width: 200%;
+  transform: translate(4%, 20%);
   display: flex;
 }
 
@@ -101,7 +103,6 @@ header,
   outline-offset: -2px;
 }
 
-
 /* .row {
 	width: 100%;
 	display: flex;
@@ -111,11 +112,16 @@ header,
 	height: 18.384615385%;
 } */
 
-
 .verticle-squares {
-	outline: 1px solid black;
-	flex-grow: 1;
-	position: relative;
+  outline: 1px solid black;
+  flex-grow: 1;
+  position: relative;
+}
+
+#d4 {
+  width: 25px;
+  height: 25px;
+  z-index: 3;
 }
 
 /* 
