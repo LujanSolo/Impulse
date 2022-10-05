@@ -234,7 +234,7 @@ function startGame(event) {
   characterTurnCardEl.show();
 
   // set dragon to starting position (this will get moved to the start game function later)
-  $(tileArray[0]).addClass(`fa-solid ${userIcon}`);
+  $(tileArray[0]).addClass(`fa-solid  fa-2x ${userIcon}`);
 }
 
 function startTurn() {
@@ -252,7 +252,9 @@ function startTurn() {
       // console.log(currentPosition)
 
       // remove class in that div
-      $(tileArray[startPosition - 1]).removeClass(`fa-solid ${userIcon}`);
+      $(tileArray[startPosition - 1]).removeClass(
+        `fa-solid  fa-2x ${userIcon}`
+      );
       // transitions opacity -- 0 - 100% in a second or so
 
       // get new position on board
@@ -265,7 +267,7 @@ function startTurn() {
   }
 
   // update position
-  $(tileArray[currentPosition - 1]).addClass(`fa-solid ${userIcon}`);
+  $(tileArray[currentPosition - 1]).addClass(`fa-solid  fa-2x ${userIcon}`);
   // todo transitions opacity -- 0 - 100% in a second or so
 
   // call show card functions
@@ -310,7 +312,9 @@ function showPickedAcquirableGoodsCard() {
   userOwnItems.push(goodsBucket[currentPosition].product_name);
 
   // edit the info on this card
-  // $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
+  $("#picked-good-img").attr("src", `${goodsBucket[currentPosition].url}`);
+  console.log(goodsBucket[currentPosition].url);
+  $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
   $("#picked-good-name").text(
     `You are a proud owner of a ${goodsBucket[currentPosition].product_name}`
   );
@@ -399,7 +403,7 @@ function playAgain() {
 
   // hide gameOver card and remove class on last tile
   gameOverCardEl.hide();
-  $(tileArray[tileArray.length - 1]).removeClass(`fa-solid ${userIcon}`);
+  $(tileArray[tileArray.length - 1]).removeClass(`fa-solid  fa-2x ${userIcon}`);
   // refresh play game page
   startGameCardEl.show();
 }
