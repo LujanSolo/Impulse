@@ -101,7 +101,6 @@ header,
   outline-offset: -2px;
 }
 
-
 /* .row {
 	width: 100%;
 	display: flex;
@@ -111,11 +110,18 @@ header,
 	height: 18.384615385%;
 } */
 
-
 .verticle-squares {
-	outline: 1px solid black;
-	flex-grow: 1;
-	position: relative;
+  outline: 1px solid black;
+  flex-grow: 1;
+  position: relative;
+}
+
+#d4 {
+  background-image: url(./images/impulse-d4.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
 }
 
 /* 
