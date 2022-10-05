@@ -152,6 +152,7 @@ function showPickedAcquirableGoodsCard() {
   userOwnItems.push(goodsBucket[currentPosition].product_name);
 
   // edit the info on this card
+  $("#picked-good-img").attr("src", `${goodsBucket[currentPosition].url}`);
   $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
   $("#picked-good-name").text(
     `You are a proud owner of a ${goodsBucket[currentPosition].product_name}`
@@ -327,3 +328,15 @@ freeSpiritStartbtn.on("click", startGame);
 workLifeStartbtn.on("click", startGame);
 
 playAgainbtn.on("click", playAgain);
+
+var myWidget = cloudinary.createUploadWidget(
+  {
+    cloudName: "dcfdy30wq",
+    uploadPreset: "my_preset",
+  },
+  (error, result) => {
+    if (!error && result && result.event === "success") {
+      console.log("Done! Here is the image info: ", result.info);
+    }
+  }
+);
