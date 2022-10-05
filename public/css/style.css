@@ -76,17 +76,17 @@ header,
   display: none;
 }
 
-.board {
+/* .board {
   height: 100%;
   width: 90vw;
   height: 35vw;
   margin: 10px auto;
-}
+} */
 
 .board section {
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(25%, 25%);
+  transform: translate(25%, 25%); */
   display: flex;
 }
 

@@ -1,7 +1,5 @@
 // ************************ Reference variables ************************//
-const container = $("#container");
 const characterTurnCardEl = $(".character-turn-card");
-
 const startGameCardEl = $(".start-game-card");
 const lifeEventsCardEl = $(".life-events-card");
 const acquiredGoodCardEl = $(".acquired-good-card");
@@ -42,163 +40,163 @@ let goodsBucket = [];
 // ************************ Functions ************************//
 // colors on mouse hove on the tile and color off on mouse off tiles
 document.getElementById("1").addEventListener("mouseover", function () {
-  document.getElementById("1").style.backgroundColor ="red";
+  document.getElementById("1").style.backgroundColor = "red";
 });
 
 document.getElementById("1").addEventListener("mouseout", function () {
-  document.getElementById("1").style.backgroundColor ="white";
+  document.getElementById("1").style.backgroundColor = "white";
 });
 
 document.getElementById("2").addEventListener("mouseover", function () {
-  document.getElementById("2").style.backgroundColor ="orange";
+  document.getElementById("2").style.backgroundColor = "orange";
 });
 
 document.getElementById("2").addEventListener("mouseout", function () {
-  document.getElementById("2").style.backgroundColor ="white";
+  document.getElementById("2").style.backgroundColor = "white";
 });
 
 document.getElementById("3").addEventListener("mouseover", function () {
-  document.getElementById("3").style.backgroundColor ="yellow";
+  document.getElementById("3").style.backgroundColor = "yellow";
 });
 
 document.getElementById("3").addEventListener("mouseout", function () {
-  document.getElementById("3").style.backgroundColor ="white";
+  document.getElementById("3").style.backgroundColor = "white";
 });
 
 document.getElementById("4").addEventListener("mouseover", function () {
-  document.getElementById("4").style.backgroundColor ="green";
+  document.getElementById("4").style.backgroundColor = "green";
 });
 
 document.getElementById("4").addEventListener("mouseout", function () {
-  document.getElementById("4").style.backgroundColor ="white";
+  document.getElementById("4").style.backgroundColor = "white";
 });
 
 document.getElementById("5").addEventListener("mouseover", function () {
-  document.getElementById("5").style.backgroundColor ="blue";
+  document.getElementById("5").style.backgroundColor = "blue";
 });
 
 document.getElementById("5").addEventListener("mouseout", function () {
-  document.getElementById("5").style.backgroundColor ="white";
+  document.getElementById("5").style.backgroundColor = "white";
 });
 
 document.getElementById("6").addEventListener("mouseover", function () {
-  document.getElementById("6").style.backgroundColor ="purple";
+  document.getElementById("6").style.backgroundColor = "purple";
 });
 
 document.getElementById("6").addEventListener("mouseout", function () {
-  document.getElementById("6").style.backgroundColor ="white";
+  document.getElementById("6").style.backgroundColor = "white";
 });
 
 document.getElementById("7").addEventListener("mouseover", function () {
-  document.getElementById("7").style.backgroundColor ="pink";
+  document.getElementById("7").style.backgroundColor = "pink";
 });
 
 document.getElementById("7").addEventListener("mouseout", function () {
-  document.getElementById("7").style.backgroundColor ="white";
+  document.getElementById("7").style.backgroundColor = "white";
 });
 
 document.getElementById("8").addEventListener("mouseover", function () {
-  document.getElementById("8").style.backgroundColor ="cyan";
+  document.getElementById("8").style.backgroundColor = "cyan";
 });
 
 document.getElementById("8").addEventListener("mouseout", function () {
-  document.getElementById("8").style.backgroundColor ="white";
+  document.getElementById("8").style.backgroundColor = "white";
 });
 
 document.getElementById("9").addEventListener("mouseover", function () {
-  document.getElementById("9").style.backgroundColor ="grey";
+  document.getElementById("9").style.backgroundColor = "grey";
 });
 
 document.getElementById("9").addEventListener("mouseout", function () {
-  document.getElementById("9").style.backgroundColor ="white";
+  document.getElementById("9").style.backgroundColor = "white";
 });
 
 document.getElementById("10").addEventListener("mouseover", function () {
-  document.getElementById("10").style.backgroundColor ="brown";
+  document.getElementById("10").style.backgroundColor = "brown";
 });
 
 document.getElementById("10").addEventListener("mouseout", function () {
-  document.getElementById("10").style.backgroundColor ="white";
+  document.getElementById("10").style.backgroundColor = "white";
 });
 
 document.getElementById("11").addEventListener("mouseover", function () {
-  document.getElementById("11").style.backgroundColor ="#98FB98";
+  document.getElementById("11").style.backgroundColor = "#98FB98";
 });
 
 document.getElementById("11").addEventListener("mouseout", function () {
-  document.getElementById("11").style.backgroundColor ="white";
+  document.getElementById("11").style.backgroundColor = "white";
 });
 
 document.getElementById("12").addEventListener("mouseover", function () {
-  document.getElementById("12").style.backgroundColor ="#FFD700";
+  document.getElementById("12").style.backgroundColor = "#FFD700";
 });
 
 document.getElementById("12").addEventListener("mouseout", function () {
-  document.getElementById("12").style.backgroundColor ="white";
+  document.getElementById("12").style.backgroundColor = "white";
 });
 
 document.getElementById("13").addEventListener("mouseover", function () {
-  document.getElementById("13").style.backgroundColor ="#7b337d";
+  document.getElementById("13").style.backgroundColor = "#7b337d";
 });
 
 document.getElementById("13").addEventListener("mouseout", function () {
-  document.getElementById("13").style.backgroundColor ="white";
+  document.getElementById("13").style.backgroundColor = "white";
 });
 
 document.getElementById("14").addEventListener("mouseover", function () {
-  document.getElementById("14").style.backgroundColor ="#c874b2";
+  document.getElementById("14").style.backgroundColor = "#c874b2";
 });
 
 document.getElementById("14").addEventListener("mouseout", function () {
-  document.getElementById("14").style.backgroundColor ="white";
+  document.getElementById("14").style.backgroundColor = "white";
 });
 
 document.getElementById("15").addEventListener("mouseover", function () {
-  document.getElementById("15").style.backgroundColor ="#003B59";
+  document.getElementById("15").style.backgroundColor = "#003B59";
 });
 
 document.getElementById("15").addEventListener("mouseout", function () {
-  document.getElementById("15").style.backgroundColor ="white";
+  document.getElementById("15").style.backgroundColor = "white";
 });
 
 document.getElementById("16").addEventListener("mouseover", function () {
-  document.getElementById("16").style.backgroundColor ="#FF5349";
+  document.getElementById("16").style.backgroundColor = "#FF5349";
 });
 
 document.getElementById("16").addEventListener("mouseout", function () {
-  document.getElementById("16").style.backgroundColor ="white";
+  document.getElementById("16").style.backgroundColor = "white";
 });
 
 document.getElementById("17").addEventListener("mouseover", function () {
-  document.getElementById("17").style.backgroundColor ="#39beff";
+  document.getElementById("17").style.backgroundColor = "#39beff";
 });
 
 document.getElementById("17").addEventListener("mouseout", function () {
-  document.getElementById("17").style.backgroundColor ="white";
+  document.getElementById("17").style.backgroundColor = "white";
 });
 
 document.getElementById("18").addEventListener("mouseover", function () {
-  document.getElementById("18").style.backgroundColor ="#454545";
+  document.getElementById("18").style.backgroundColor = "#454545";
 });
 
 document.getElementById("18").addEventListener("mouseout", function () {
-  document.getElementById("18").style.backgroundColor ="white";
+  document.getElementById("18").style.backgroundColor = "white";
 });
 
 document.getElementById("19").addEventListener("mouseover", function () {
-  document.getElementById("19").style.backgroundColor ="#ff6600";
+  document.getElementById("19").style.backgroundColor = "#ff6600";
 });
 
 document.getElementById("19").addEventListener("mouseout", function () {
-  document.getElementById("19").style.backgroundColor ="white";
+  document.getElementById("19").style.backgroundColor = "white";
 });
 
 document.getElementById("20").addEventListener("mouseover", function () {
-  document.getElementById("20").style.backgroundColor ="#cc1d1d";
+  document.getElementById("20").style.backgroundColor = "#cc1d1d";
 });
 
 document.getElementById("20").addEventListener("mouseout", function () {
-  document.getElementById("20").style.backgroundColor ="white";
+  document.getElementById("20").style.backgroundColor = "white";
 });
 
 // function to start game
@@ -384,7 +382,7 @@ function endGame() {
   );
 
   gameOverCardEl.show();
-  
+
   // todo set values from local storage to user Database
 }
 
