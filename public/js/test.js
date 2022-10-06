@@ -282,12 +282,12 @@ function showAcquirableGoodsCard() {
   acquiredGoodCardEl.show();
 
   // edits the info on this card
-  $("#product-name").text(`${goodsBucket[currentPosition].product_name}`);
+  $("#product-name").text(`${goodsBucket[currentPosition - 1].product_name}`);
   $("#product-money-stats").text(
-    `Costs: ${goodsBucket[currentPosition].money_change}`
+    `Costs: ${goodsBucket[currentPosition - 1].money_change}`
   );
   $("#product-mood-stats").text(
-    `Mood Change: ${goodsBucket[currentPosition].dopa_change}`
+    `Mood Change: ${goodsBucket[currentPosition - 1].dopa_change}`
   );
 }
 
@@ -307,16 +307,16 @@ function showPickedAcquirableGoodsCard() {
   pickedGoodsCardEl.show();
 
   // update user scores
-  userMoney += goodsBucket[currentPosition].money_change;
-  userDopaLevel += goodsBucket[currentPosition].dopa_change;
-  userOwnItems.push(goodsBucket[currentPosition].product_name);
+  userMoney += goodsBucket[currentPosition - 1].money_change;
+  userDopaLevel += goodsBucket[currentPosition - 1].dopa_change;
+  userOwnItems.push(goodsBucket[currentPosition - 1].product_name);
 
   // edit the info on this card
-  $("#picked-good-img").attr("src", `${goodsBucket[currentPosition].url}`);
-  console.log(goodsBucket[currentPosition].url);
-  $("#goods-description").text(`${goodsBucket[currentPosition].description}`);
+  $("#picked-good-img").attr("src", `${goodsBucket[currentPosition - 1].url}`);
+  console.log(goodsBucket[currentPosition - 1].url);
+  $("#goods-description").text(`${goodsBucket[currentPosition - 1].description}`);
   $("#picked-good-name").text(
-    `You are a proud owner of a ${goodsBucket[currentPosition].product_name}`
+    `You are a proud owner of a ${goodsBucket[currentPosition - 1].product_name}`
   );
   $("#new-picked-goods-money").text(`You now have: $${userMoney}`);
   $("#new-picked-goods-dopa").text(`Your new mood level is: ${userDopaLevel}`);
@@ -332,12 +332,12 @@ function showPickedLifeEvents() {
   pickedLifeEventCardEl.show();
 
   // update user scores
-  userMoney += lifeEventsBucket[currentPosition].money_change;
-  userDopaLevel += lifeEventsBucket[currentPosition].dopa_change;
-  userEventItems.push(lifeEventsBucket[currentPosition].event_name);
+  userMoney += lifeEventsBucket[currentPosition - 1].money_change;
+  userDopaLevel += lifeEventsBucket[currentPosition - 1].dopa_change;
+  userEventItems.push(lifeEventsBucket[currentPosition - 1].event_name);
 
   // edit the info on this card
-  $("#life-event-name").text(`${lifeEventsBucket[currentPosition].event_name}`);
+  $("#life-event-name").text(`${lifeEventsBucket[currentPosition - 1].event_name}`);
   $("#new-picked-life-money").text(`You now have: $${userMoney}`);
   $("#new-picked-life-dopa").text(`Your new mood level is: ${userDopaLevel}`);
 }
