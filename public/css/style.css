@@ -7,8 +7,8 @@ body {
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 50;
-  left: 40%;
+  top: 25%;
+  left: 0;
   transform: scale(0.1);
   padding: 0 30px 30px;
   color: #333;
@@ -26,8 +26,8 @@ body {
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 50;
-  left: 40%;
+  top: 25%;
+  left: 0;
   transform: scale(0.1);
   padding: 0 30px 30px;
   color: #333;
@@ -138,4 +138,9 @@ header,
 
 .login-signup-form {
   margin-bottom: 0 !important;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
 }
