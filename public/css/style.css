@@ -135,3 +135,7 @@ header,
 	grid-template-columns: repeat(9, 80px);
 	grid-template-rows: 125px;
 } */
+
+.login-signup-form {
+  margin-bottom: 0 !important;
+}

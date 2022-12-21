@@ -44,7 +44,7 @@
 <div id="login-form" class="modal login-form">
   <h2 class="page-title">Login : </h2>
   <div class="modal-content animate" action="/action_page.php" method="post">
-    <form class="container">
+    <form class="container login-signup-form text-center pt-2">
       <label for="uname"><b>Username</b></label>
       <input
         type="text"
@@ -54,7 +54,8 @@
         required
       />
 
-      <label for="psw"><b>Password</b></label>
+      <br>
+      <label for="psw" class="pt-2"><b>Password</b></label>
       <input
         type="password"
         id="password-login"
@@ -63,20 +64,21 @@
         required
       />
 
-      <button type="submit">Login</button>
-      <label>
+      <br>
+      <button type="submit" class="my-3">Login</button>
+      {{!-- <label>
         <input type="checkbox" checked="checked" name="remember" />
         Remember me
-      </label>
+      </label> --}}
     </form>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="container text-center" style="background-color:#f1f1f1">
       <button
         type="button"
         onclick="document.getElementById('login-form').style.display='none'"
-        class="cancelbtn"
+        class="cancelbtn my-3"
       >Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      {{!-- <span class="psw">Forgot <a href="#">password?</a></span> --}}
     </div>
   </div>
 
@@ -86,7 +88,7 @@
 <div id="sign-up-form" class="modal signup-form">
   <h2 class="page-title">Signup : </h2>
   <div class="modal-content animate" action="/action_page.php" method="post">
-    <form class="container">
+    <form class="container login-signup-form text-center pt-2">
       <label for="uname"><b>Username</b></label>
       <input
         type="text"
@@ -96,7 +98,8 @@
         required
       />
 
-      <label for="email-signup"><b>Email</b></label>
+      <br>
+      <label for="email-signup" class="pt-2"><b>Email</b></label>
       <input
         type="text"
         id="email-signup"
@@ -105,7 +108,8 @@
         required
       />
 
-      <label for="psw"><b>Password</b></label>
+      <br>
+      <label for="psw" class="pt-2"><b>Password</b></label>
       <input
         type="password"
         id="password-signup"
@@ -114,16 +118,17 @@
         required
       />
 
-      <button type="submit">Sign Up</button>
+      <br>
+      <button type="submit" class="my-3">Sign Up</button>
     </form>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="container text-center" style="background-color:#f1f1f1">
       <button
         type="button"
         onclick="document.getElementById('sign-up-form').style.display='none'"
-        class="cancelbtn"
+        class="cancelbtn my-3"
       >Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      {{!-- <span class="psw">Forgot <a href="#">password?</a></span> --}}
     </div>
   </div>
 
